@@ -14,28 +14,6 @@ $sizes: (1320:$xxl,
     0:0
 );
 
-
-@each $container-size,
-$break-point in $sizes {
-    @if $container-size==0 {
-        .container {
-            width: 100%;
-            margin-right: auto;
-            margin-left: auto;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-    }
-
-    @else {
-        @media(min-width:#{$break-point}px) {
-            .container {
-                max-width: #{$container-size}px;
-            }
-        }
-    }
-}
-
 @mixin media($size) {
     @media (max-width:#{$size}px) {
         @content;

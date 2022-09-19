@@ -5,13 +5,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
-        title Document
+        link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
+        title Home - Code It
     body 
         .wrapper 
             include components/header 
-            +header 
-            include components/main 
-            +main 
+            +header('home') 
+                main.main 
+                    
             include components/footer 
             +footer
         script(src="js/app.min.js") 

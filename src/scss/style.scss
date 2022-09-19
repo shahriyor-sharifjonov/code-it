@@ -1,7 +1,7 @@
 // Главный Sass файл
 
 // Шрифты
-// @import "fonts";
+@import "fonts";
 
 // abstracts
 @import 
@@ -9,6 +9,11 @@
     'abstracts/functions',
     'abstracts/mixins',
     'abstracts/placeholders';
+    
+// themes
+@import 
+    'themes/theme',
+    'themes/admin';
 
 // vendors
 // @import 'vendors/bootstrap'
@@ -37,8 +42,3 @@
 // pages
 @import 
     'pages/home';
-
-// themes
-@import 
-    'themes/theme',
-    'themes/admin';
