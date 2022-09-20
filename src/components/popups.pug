@@ -5,3 +5,15 @@ mixin popups()
             .popup__inner 
                 p.popup__title Спасибо!
                 p.popup__p В скором времени мы свяжемся с вами.
+    .popup.purple#feedback
+        .popup__overlay.close-popup
+        .popup__body 
+            .popup__inner 
+                .popup__header
+                    p.popup__title Мы скоро вам перезвоним!
+                    p.popup__p Поделитесь с нами контактами, чтобы мы смогли связаться с вами и подобрать подходящий курс и дату пробного урока.
+                form(action="#").form.popup__form
+                    input(type="text" placeholder="Ваше имя" required).popup__input
+                    input(type="text" placeholder="+7 (___) ___-__-__" required).popup__input
+                    button(type='submit').btn.popup__btn Попробовать бесплатно
+                    p.popup__form-p Оставляя заявку, вы принимаете оферту, условия договора на оказание услуг и политики обработки пресональных данных.

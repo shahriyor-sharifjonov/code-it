@@ -35,6 +35,7 @@ window.onclick = (e) => {
 }
 
 const openPopup = (el) => {
+  closePopup()
   const popup = document.querySelector(`#${el}`)
   popup.classList.add('active')
 }
@@ -51,6 +52,17 @@ if(document.querySelectorAll('.close-popup')){
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       closePopup()
+    })
+  })
+}
+
+if(document.querySelectorAll('.open-popup')){
+  const btns = document.querySelectorAll('.open-popup');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-target');
+      openPopup(target)
+      if(menuOpened) menuToggle()
     })
   })
 }
