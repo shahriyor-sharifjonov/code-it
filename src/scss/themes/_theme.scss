@@ -60,7 +60,6 @@ a{
     }
 }
 .section{
-    min-height: 500px;
     display: flex;
     &.purple{
         .section__inner{
@@ -101,6 +100,11 @@ a{
     &.active{
         opacity: 1;
         visibility: visible;
+        .popup{
+            &__body{
+                transform: translateX(0);
+            }
+        }
     }
     &.purple{
         .popup{
@@ -125,6 +129,8 @@ a{
         z-index: 1;
         max-width: 726px;
         width: 100%;
+        transform: translateX(100%);
+        transition: 800ms cubic-bezier(0.68,-0.55,0.265,1.55);
         @include media(1024){
             border-radius: 30px;
         }

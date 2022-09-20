@@ -141,7 +141,6 @@ a {
 }
 
 .section {
-  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +202,12 @@ a {
   visibility: visible;
 }
 
+.popup.active .popup__body {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .popup.purple .popup__body {
   background: #EEE6F5;
 }
@@ -224,6 +229,12 @@ a {
   z-index: 1;
   max-width: 726px;
   width: 100%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .popup__inner {
