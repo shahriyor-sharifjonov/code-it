@@ -55,7 +55,7 @@ if(document.querySelectorAll('.close-popup')){
     })
   })
 }
-
+ 
 if(document.querySelectorAll('.open-popup')){
   const btns = document.querySelectorAll('.open-popup');
   btns.forEach(btn => {
