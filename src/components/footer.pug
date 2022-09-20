@@ -1,4 +1,33 @@
 mixin footer()
+    include popups 
+    +popups
     footer.footer  
-        .footer__body.container 
-            footer
+        .footer__top
+            .footer__top-body.container 
+                a(href="index.html" title="Главная страница").footer__logo
+                    img(src="@img/logo.svg", alt="Code it online school" draggable="false")
+                ul.footer__list 
+                    li.footer__li 
+                        a(href="#!").footer__link О школе 
+                    li.footer__li 
+                        a(href="#!").footer__link Кто мы 
+                    li.footer__li 
+                        a(href="#!").footer__link Все курсы 
+                    li.footer__li 
+                        a(href="#!").footer__link Контакты 
+                form(action="#").footer__form.form 
+                    label(for="footer-form-email").footer__form-label Оставайтесь в курсе событий!
+                    .footer__form-content 
+                        input(type="email" id="footer-form-email" placeholder="Email" required).footer__form-input
+                        button(type="submit").footer__form-btn.btn Отправить
+        .footer__mid
+            .footer__mid-body.container 
+                p.footer__copy © Code It 2022.
+                a(href="#!").footer__bot-link ИП Чугаева Елена Сергеевна
+                a(href="#!").footer__bot-link.dn ИНН 212301612309
+                a(href="#!").footer__bot-link.dn ОГРН (ОГРНИП) 322213000033254 от 08.07.2022
+        .footer__bot
+            .footer__bot-body.container 
+                a(href="#!").footer__bot-link Договор-оферта 
+                a(href="#!").footer__bot-link Политика конфиденциальности
+                a(href="#!").footer__bot-link Обработка персональных данных

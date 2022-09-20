@@ -1,1 +1,178 @@
-// Футер
+.footer{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        &-body{
+            height: 124px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include media(1375){
+                max-width: 885px;
+                height: 71px;
+            }
+        }
+    }
+    &__logo{
+        width: 280px;
+        line-height: 0;
+        @include media(1375){
+            width: 226px;
+        }
+        @include media(768){
+            width: 167px;
+        }
+        @include media(576){
+            width: 139px;
+        }
+        @include media(425){
+            width: 79px;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+        @include media(374){
+            gap: 5px
+        }
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: #000000;   
+        transition: 300ms ease-out;
+        @include media(768){
+            font-size: 16px;
+            line-height: 100%;
+        }
+        @include media(576){
+            font-size: 13px;
+        }
+        &:hover{
+            color: #5A0AA7;
+        }
+    }
+    &__form{
+        @include media(1375){
+            display: none;
+        }
+        &-label{
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        &-content{
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-input{
+            background: #FFFFFF;
+            border: 2px solid #000000;
+            border-radius: 40px;
+            padding: 15px 17px;
+            margin-right: 10px;
+            min-width: 215px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            @include media(768){
+                border: 1px solid #000000;
+            }
+        }
+        &-btn{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            min-width: 215px;
+            width: 100%;
+        }
+    }
+    &__mid{
+        @include media(1375){
+            order: 1;
+        }
+        &-body{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 19px 15px;
+            position: relative;
+            @include media(1375){
+                max-width: 885px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 15px;
+                width: calc(100% - 30px);
+                height: 1px;
+                background: #000;
+                @include media(1375){
+                    bottom: auto;
+                    top: 0;
+                }
+            }
+        }
+    }
+    &__bot{
+        &-link{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            text-align: right;
+            color: #000000;
+            @include media(1375){
+                &.dn{
+                    display: none;
+                }
+            }
+            @include media(768){
+                font-size: 14px;
+                line-height: 100%;
+                text-align: center;
+            }
+            @include media(576){
+                font-size: 13px;
+                line-height: 100%;
+                color: #646464;
+            }
+        }
+        &-body{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 19px 15px;
+            gap: 20px;
+            @include media(1375){
+                max-width: 885px;
+            }
+        }
+    }
+    &__copy{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        color: #000000;
+        @include media(768){
+            font-size: 14px;
+            line-height: 100%;
+        }
+        @include media(576){
+            font-size: 13px;
+            line-height: 100%;
+        }
+    }
+}

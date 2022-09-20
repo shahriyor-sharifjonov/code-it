@@ -11,8 +11,11 @@ html(lang="en")
         .wrapper 
             include components/header 
             +header('home') 
-                main.main 
-                    
+            main.main 
+                section.section  
+                    .section__container.container 
+                        .section__inner 
+                            
             include components/footer 
             +footer
         script(src="js/app.min.js") 

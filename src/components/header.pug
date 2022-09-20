@@ -12,7 +12,7 @@ mixin header(link)
                 a(href="mailto:codeit-school@ya.ru").header__mail codeit-school@ya.ru 
         nav.header__nav
             .header__nav-body.container
-                a(href="index.html").header__logo.gif
+                a(href="index.html" title="Главная страница").header__logo.gif
                     img(src="img/logo.gif", alt="Code it" draggable="false")
                 ul.header__list 
                     if link === 'home'
@@ -45,7 +45,7 @@ mixin header(link)
                     else
                         li.header__li 
                             a(href="#!").header__link Контакты
-                button(type='button').header__btn.btn Попробовать бесплатно
+                button(type='button' data-target="feedback").open-popup.header__btn.btn Попробовать бесплатно
                 button.header__button 
                     span.header__button-line
         .header__menu
@@ -58,7 +58,7 @@ mixin header(link)
                     a(href="#!").header__menu-link Контакты
                 li.header__menu-li 
                     a(href="#!").header__menu-link FAQ
-            button(type='button').header__menu-btn.btn Попробовать бесплатно
+            button(type='button' data-target="feedback").open-popup.header__menu-btn.btn Попробовать бесплатно
             .header__menu-soc 
                 a(href="#!" title="instagram").header__menu-soc-item
                     img(src="@img/instagram.svg", alt="" draggable="false")
