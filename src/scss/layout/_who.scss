@@ -24,6 +24,7 @@
         }
         @include media(576){
             margin-bottom: 30px;
+            padding: 0;
         }
         @include media(425){
             margin-bottom: 15px;
