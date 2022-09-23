@@ -12,10 +12,18 @@ html(lang="en")
             include components/header 
             +header('home') 
             main.main 
-                section.section  
-                    .section__container.container 
-                        .section__inner 
-                            p intro 
+                section.section.intro  
+                    .section__container.container.intro__body 
+                        .section__inner.intro__inner
+                            .intro__row
+                                .intro__left 
+                                    h1.intro__title Пожалуй, самый #[span важный вклад] в образование ваших детей —посвятить их в мир IT.
+                                    p.intro__p Давайте выберем направление обучения! #[br] Сколько лет вашему ребенку?
+                                    .intro__buttons 
+                                        button(type="button" data-target="feedback").popup-open.intro__button 5-10 лет
+                                        button(type="button" data-target="feedback").popup-open.intro__button 11-17 лет 
+                                .intro__img 
+                                    img(src="@img/intro-img.png", alt="")
                             
             include components/footer 
             +footer
