@@ -73,6 +73,12 @@ if(document.querySelectorAll('.form')){
     form.addEventListener('submit', (e) => {
       e.preventDefault()
       const inputs = form.querySelectorAll('input')
+      if(form.querySelectorAll('textarea')){
+        const ta = form.querySelectorAll('textarea')
+        ta.forEach(textarea => {
+          textarea.value = ''
+        })
+      }
       inputs.forEach(input => {
         input.value = ''
       })

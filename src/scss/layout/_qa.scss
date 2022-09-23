@@ -1,0 +1,134 @@
+.qa{
+    padding: 70px 0;
+    @include media(1375){
+        padding: 40px 0;
+    }
+    @include media(768){
+        padding: 25px 0;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        max-width: 530px;
+        width: 100%;
+        @include media(1024){
+            max-width: 383px;
+        }
+    }
+    &__img{
+        max-width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include media(374){
+            display: none;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &-p{
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 100%;
+            @include media(1375){
+                font-size: 15px;
+                line-height: 100%;
+            }
+            @include media(1024){
+                font-size: 12px;
+                line-height: 100%;
+            }
+            @include media(768){
+                font-size: 8px;
+            }
+        }
+    }
+    &__input{
+        height: 60px;
+        padding: 20px 24px;
+        background: #FFFFFF;
+        border: 2px solid #141E2D;
+        border-radius: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        @include media(1375){
+            height: 40px;
+            font-size: 13.5px;
+        }
+        @include media(768){
+            border: 1px solid #141E2D;
+        }
+    }
+    &__textarea{
+        background: #FFFFFF;
+        border: 2px solid #141E2D;
+        border-radius: 40px;
+        height: 146px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        padding: 20px 24px;
+        @include media(1375){
+            font-size: 13.5px;
+        }
+        @include media(768){
+            border: 1px solid #141E2D;
+        }
+        @include media(576){
+            border-radius: 20px;
+        }
+    }
+    &__btn{
+        height: 60px;
+        @include media(1024){
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 25px;
+        @include media(1375){
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        @include media(768){
+            font-size: 20px;
+        }
+        @include media(576){
+            font-size: 18px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 35px;
+        @include media(1375){
+            margin-bottom: 20px;
+        }
+        @include media(1024){
+            font-size: 16px;
+        }
+        @include media(768){
+            font-size: 16px;
+        }
+    }
+}
