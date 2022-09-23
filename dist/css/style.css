@@ -1682,13 +1682,19 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
+  .footer__list {
+    gap: 5px;
+  }
+
   .intro__inner {
     padding: 30px 20px 20px;
   }
 
   .intro__row {
     padding-top: 0;
+    min-height: 0;
+    height: auto;
   }
 
   .intro__left {
@@ -1697,11 +1703,5 @@ a {
 
   .intro__img {
     display: none;
-  }
-}
-
-@media (max-width: 374px) {
-  .footer__list {
-    gap: 5px;
   }
 }
