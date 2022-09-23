@@ -1,6 +1,7 @@
 .who{
+    padding-bottom: 50px;
     &__body{
-        padding: 50px 15px;
+        padding: 50px 15px 0 15px;
         @include media(768){
             padding: 35px 15px;
         }
@@ -178,5 +179,98 @@
                 }
             }
         }
+    }
+    &__command{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px 100px;
+        @include media(1375){
+            gap: 35px 40px;
+        }
+        @include media(1024){
+            gap: 35px 20px;
+        }
+        @include media(768){
+            gap: 35px 15px;
+        }
+        @include media(576){
+            gap: 35px 20px;
+            width: 273px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-item{
+            width: calc(25% - 75px);
+            @include media(1375){
+                width: calc(25% - 30px);
+            }
+            @include media(1024){
+                width: calc(25% - 15px);
+            }
+            @include media(768){
+                width: calc(25% - 11.3px);
+            }
+            @include media(576){
+                width: calc(50% - 10px);
+            }
+            &-img{
+                width: 123px;
+                height: 123px;
+                border-radius: 50%;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 0;
+                @include media(768){
+                    width: 89px;
+                    height: 89px;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            &-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &-name{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+                color: #000000;
+                @include media(1375){
+                    font-size: 22px;
+                    line-height: 100%;
+                    margin-bottom: 5px;
+                }
+                @include media(1024){
+                    font-size: 18px;
+                    line-height: 100%;
+                }
+                @include media(768){
+                    font-size: 15px;
+                    line-height: 100%;
+                }
+                @include media(425){
+                    font-size: 16px;
+                    line-height: 100%;
+                }
+            }
+            &-p{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 100%;
+                text-align: center;
+                color: #646464;
+                @include media(768){
+                    font-size: 13px;
+                    line-height: 100%;
+                }
+            }
+        }   
     }
 }
