@@ -23,10 +23,10 @@ mixin header(link)
                             a(href="index.html").header__link О школе
                     if link === 'who'
                         li.header__li 
-                            a(href="#!").header__link.active Кто мы
+                            a(href="about.html").header__link.active Кто мы
                     else
                         li.header__li 
-                            a(href="#!").header__link Кто мы
+                            a(href="about.html").header__link Кто мы
                     if link === 'courses'
                         li.header__li 
                             a(href="#!").header__link.active Курсы
@@ -52,6 +52,8 @@ mixin header(link)
             ul.header__menu-list 
                 li.header__menu-li 
                     a(href="#!").header__menu-link О школе 
+                li.header__menu-li 
+                    a(href="about.html").header__menu-link Кто мы
                 li.header__menu-li 
                     a(href="#!").header__menu-link Курсы
                 li.header__menu-li 
