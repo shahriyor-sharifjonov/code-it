@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css?_v=20220924022235">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Главная - Code It</title>
+    <title>Контакты - Code It</title>
   </head>
   <body> 
     <div class="wrapper"> 
@@ -19,11 +19,11 @@
               <nav class="header__nav">
                 <div class="header__nav-body container"><a class="header__logo gif" href="index.html" title="Главная страница"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.gif" alt="Code it" draggable="false"></picture></a>
                   <ul class="header__list"> 
-                    <li class="header__li"> <a class="header__link active" href="index.html">О школе</a></li>
+                    <li class="header__li"> <a class="header__link" href="index.html">О школе</a></li>
                     <li class="header__li"> <a class="header__link" href="about.html">Кто мы</a></li>
                     <li class="header__li"> <a class="header__link" href="#!">Курсы</a></li>
                     <li class="header__li"> <a class="header__link" href="#!">FAQ</a></li>
-                    <li class="header__li"> <a class="header__link" href="contacts.html">Контакты</a></li>
+                    <li class="header__li"> <a class="header__link active" href="#!">Контакты</a></li>
                   </ul>
                   <button class="open-popup header__btn btn" type="button" data-target="feedback">Попробовать бесплатно</button>
                   <button class="header__button"> <span class="header__button-line"></span></button>
@@ -45,23 +45,22 @@
               </div>
             </header>
       <main class="main"> 
-        <section class="section intro"> 
-          <div class="section__container container intro__body"> 
-            <div class="section__inner intro__inner">
-              <div class="intro__row">
-                <div class="intro__left"> 
-                  <h1 class="intro__title">Пожалуй, самый <span>важный вклад</span> в образование ваших детей —посвятить их в мир IT.</h1>
-                  <p class="intro__p">Давайте выберем направление обучения! <br> Сколько лет вашему ребенку?</p>
-                  <div class="intro__buttons"> 
-                    <button class="popup-open intro__button" type="button" data-target="feedback">5-10 лет</button>
-                    <button class="popup-open intro__button" type="button" data-target="feedback">11-17 лет </button>
+                <div class="qa"> 
+                  <div class="qa__body container-lg"> 
+                    <div class="qa__content"> 
+                      <p class="qa__title">Вопросы? С удовольствием ответим!</p>
+                      <p class="qa__p">Опишите, пожалуйста, ваш вопрос.</p>
+                      <form class="qa__form form" action="#">
+                        <input class="qa__input" type="text" placeholder="Ваше имя" required>
+                        <input class="qa__input" type="email" placeholder="Почта" required>
+                        <textarea class="qa__textarea" placeholder="Опишите ваш вопрос" required></textarea>
+                        <button class="btn qa__btn" type="submit">Оставить заявку</button>
+                        <p class="qa__form-p">Оставляя заявку, вы принимаете оферту, условия договора на оказание услуг и политики обработки пресональных данных. </p>
+                      </form>
+                    </div>
+                    <div class="qa__img"> <img src="img/qa.svg" alt="" draggable="false"></div>
                   </div>
                 </div>
-                <div class="intro__img"> <picture><source srcset="img/intro-img.webp" type="image/webp"><img src="img/intro-img.png" alt=""></picture></div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
                   <div class="popup purple" id="thank">
                     <div class="popup__overlay close-popup"></div>
