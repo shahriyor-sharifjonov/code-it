@@ -20,15 +20,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 111px;
+        padding-bottom: 60px;
         @include media(1375){
-            padding-bottom: 63px;
+            padding-bottom: 30px;
         }
         @include media(1024){
-            padding-bottom: 70px;
-        }
-        @include media(768){
-            padding-bottom: 60px;
+            padding-bottom: 50px;
         }
         @include media(576){
             position: relative;
