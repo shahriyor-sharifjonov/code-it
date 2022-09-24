@@ -13,16 +13,16 @@
             padding: 20px 0 35px 10px;
         }
         @include media(374){
-            padding: 30px 20px 20px;
+            padding: 20px 20px 20px;
         }
     }
     &__row{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 111px;
+        padding-bottom: 60px;
         @include media(1375){
-            padding-bottom: 63px;
+            padding-bottom: 30px;
         }
         @include media(1024){
             padding-bottom: 70px;
@@ -38,10 +38,10 @@
             padding-top: 40px;
             padding-bottom: 0;
         }
-        @include media(425){
+        @include media(450){
             padding-top: 25px;
-            min-height: 330px;
-            height: 330px;
+            min-height: 300px;
+            height: 300px;
         }
         @include media(374){
             padding-top: 0;
@@ -78,6 +78,7 @@
         @include media(576){
             font-size: 24px;
             line-height: 100%;
+            margin-bottom: 0;
         }
         @include media(425){
             font-size: 22px;

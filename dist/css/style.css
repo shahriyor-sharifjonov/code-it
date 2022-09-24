@@ -977,7 +977,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 111px;
+  padding-bottom: 60px;
 }
 
 .intro__title {
@@ -1256,7 +1256,7 @@ a {
   }
 
   .intro__row {
-    padding-bottom: 63px;
+    padding-bottom: 30px;
   }
 
   .intro__title {
@@ -1804,6 +1804,7 @@ a {
   .intro__title {
     font-size: 24px;
     line-height: 100%;
+    margin-bottom: 0;
   }
 
   .intro__title span::before {
@@ -1835,6 +1836,12 @@ a {
 }
 
 @media (max-width: 450px) {
+  .intro__row {
+    padding-top: 25px;
+    min-height: 300px;
+    height: 300px;
+  }
+
   .intro__img {
     max-width: 170px;
     min-width: 170px;
@@ -1868,12 +1875,6 @@ a {
     line-height: 100%;
   }
 
-  .intro__row {
-    padding-top: 25px;
-    min-height: 330px;
-    height: 330px;
-  }
-
   .intro__title {
     font-size: 22px;
     line-height: 100%;
@@ -1886,7 +1887,7 @@ a {
   }
 
   .intro__inner {
-    padding: 30px 20px 20px;
+    padding: 20px 20px 20px;
   }
 
   .intro__row {
