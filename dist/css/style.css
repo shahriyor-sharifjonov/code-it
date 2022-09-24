@@ -1387,7 +1387,7 @@ a {
   }
 
   .intro__row {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 
   .intro__title {
@@ -1607,10 +1607,6 @@ a {
   .who__command-item-p {
     font-size: 13px;
     line-height: 100%;
-  }
-
-  .intro__row {
-    padding-bottom: 60px;
   }
 
   .intro__p {

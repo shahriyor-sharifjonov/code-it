@@ -25,10 +25,7 @@
             padding-bottom: 30px;
         }
         @include media(1024){
-            padding-bottom: 70px;
-        }
-        @include media(768){
-            padding-bottom: 60px;
+            padding-bottom: 50px;
         }
         @include media(576){
             position: relative;
