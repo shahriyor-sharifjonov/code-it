@@ -18,14 +18,37 @@ html(lang="en")
                             .intro__row
                                 .intro__left 
                                     h1.intro__title Пожалуй, самый #[span важный вклад] в образование ваших детей —посвятить их в мир IT.
-                                    p.intro__p Давайте выберем направление обучения! #[br] Сколько лет вашему ребенку?
+                                    p.intro__describtion Давайте выберем направление обучения! #[br] Сколько лет вашему ребенку?
                                     .intro__buttons 
                                         button(type="button" data-target="feedback").popup-open.intro__button 5-10 лет
                                         button(type="button" data-target="feedback").popup-open.intro__button 11-17 лет 
                                 .intro__img 
                                     img(src="@img/intro-img.png", alt="")
-                            .intro__content
-                                
+                            .intro__bottom
+                                h2.intro__subtitle.enable-md Почему навыки программирования нужны вашему ребенку
+                                p.intro__text.enable-md Уже с раннего возраста ребенок будет посвящен в разработку IT-продуктов. 
+                                p.intro__desc.enable-md А еще программирование развивает математическое мышление, память и отлично тренирует логику! #[br] #[br] Это не только полезно, но и еще очень увлекательно!
+                                .intro__content
+                                    .intro__wrapper 
+                                        h2.intro__subtitle.disable-md Почему навыки программирования нужны вашему ребенку
+                                        .intro__wrapper-img 
+                                            img(src="@img/intro-img-2.png", alt="")
+                                    .intro__right 
+                                        p.intro__text.disable-md Уже с раннего возраста ребенок будет посвящен в разработку IT-продуктов. 
+                                        p.intro__desc.disable-md А еще программирование развивает математическое мышление, память и отлично тренирует логику! #[br] #[br] Это не только полезно, но и еще очень увлекательно!
+                                        .intro__items 
+                                            .intro__item 
+                                                p.intro__p на #[span 70] %
+                                                p.intro__p выросло количество вакансий для IT-специалистов
+                                            .intro__item 
+                                                p.intro__p #[span 158 325 ] руб.
+                                                p.intro__p средняя зарплата IT-специалиста #[br] за 2-е пол. 2022 года
+                                            .intro__item 
+                                                p.intro__p на #[span 4-5 ] %
+                                                p.intro__p ежегордно будет расти российский рынок IT в течение следующих лет
+                                a(href="#!").intro__btn Смотреть все курсы по программированию 
+                include components/direction 
+                +direction
             include components/footer 
             +footer
         script(src="js/app.min.js") 
