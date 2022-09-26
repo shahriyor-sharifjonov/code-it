@@ -11,6 +11,26 @@ var mySwiper = new Swiper('.direction__swiper', {
   spaceBetween: 10,
 })
 
+var mySwiper = new Swiper('.learn__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  breakpoints:{
+    1375:{
+      slidesPerView: 2,
+      spaceBetween: 43,
+    },
+    768:{
+      slidesPerView: 2,
+    },
+    576:{
+      slidesPerView: 'auto',
+    },
+    426:{
+      slidesPerView: 1,
+    }
+  }
+})
+
 if(document.querySelectorAll('.gif')){
   const gifs = document.querySelectorAll('.gif');
   gifs.forEach(gif => {
