@@ -86,6 +86,25 @@ a{
     &:active{
         background: #BFFDF2;
     }
+    &_2{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: #fff;
+        padding: 17px 35px;
+        background: #5A0AA7;
+        border: 2px solid #141E2D;
+        border-radius: 40px;
+        transition: 300ms ease-out;
+        @include media(768){
+            border: 1px solid #141E2D;
+        } 
+        &:hover,
+        &:active{
+            color: #141E2D;
+            background: #EEE6F5;
+        }
+    }
 }
 .section{
     display: flex;
@@ -103,6 +122,9 @@ a{
         display: flex;
         flex: 1 1 auto;
         width: 100%;
+        @include media(768){
+            padding: 0 10px;
+        }
     }
     &__inner{
         flex: 1 1 auto;
@@ -110,6 +132,9 @@ a{
         border: 2px solid #000000;
         border-radius: 40px;
         width: 100%;
+        @include media(576){
+            border-radius: 20px;
+        }
     }
 }
 .title{
@@ -292,6 +317,145 @@ a{
         }
         @include media(576){
             padding: 10px 17px;
+        }
+    }
+}
+.course{
+    &__inner{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        position: relative;
+        @include media(1376){
+            padding: 50px 43px;
+        }
+        @include media(768){
+            padding: 40px 25px;
+            flex-direction: column;
+            gap: 35px;
+        }
+        @include media(576){
+            padding: 35px 25px;
+            gap: 25px;
+        }
+        @include media(425){
+            flex-direction: column;
+            padding: 30px 25px;
+            gap: 20px;
+        }
+        @include media(375){
+            flex-direction: column;
+            padding: 20px 22px;
+        }
+    }
+    &__left{
+        max-width: 710px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        svg{
+            @include media(768){
+                position: absolute;
+                bottom: 35px;
+                right: 25px;
+                width: 100px;
+                height: 100px;
+            }
+            @include media(360){
+                display: none;
+            }
+        }
+    }
+    &__right{
+        max-width: 427px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 47px;
+        line-height: 100%;
+        margin-bottom: 15px;
+        color: #141E2D;
+        @include media(768){
+            font-size: 27px;
+            line-height: 100%;
+        }
+        @include media(576){
+            font-size: 24px;
+        }
+        @include media(425){
+            font-size: 20px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 40px;
+        @include media(768){
+            margin-bottom: 0;
+            font-size: 19px;
+        }
+        @include media(576){
+            font-size: 16px;
+        }
+        @include media(425){
+            font-size: 15px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px 12px;
+        margin-bottom: 40px;
+        @include media(768){
+            gap: 44px 12px;
+        }
+        @include media(576){
+            gap: 20px 12px;
+        }
+    }
+    &__item{
+        width: calc(50% - 6px);
+        &-title{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            margin-bottom: 10px;
+            color: #141E2D;
+            @include media(768){
+                font-size: 15px;
+            }
+        }
+        &-p{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+            color: #141E2D;
+            @include media(1376){
+                font-size: 22px;
+            }
+            @include media(768){
+                font-size: 19px;
+            }
+        }
+    }
+    &__btn{
+        @include media(768){
+            font-size: 18px;
+            padding: 10px 30px;
+            width: max-content;
+        }
+        @include media(576){
+            font-size: 15px;
+            padding: 10px 20px;
         }
     }
 }
