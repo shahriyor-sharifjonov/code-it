@@ -1,5 +1,8 @@
 .intro{
     margin-bottom: 20px;
+    @include media(1375){
+        margin-bottom: 10px;
+    }
     &__row{
         display: flex;
         justify-content: space-between;
@@ -173,7 +176,7 @@
     }
     &__img{
         transform: rotate(8.25deg);
-        animation: rotate 1s infinite alternate linear;
+        animation: rotate 2s infinite alternate ease-in;
         transform-origin: bottom;
         @include media(1375){
             max-width: 472px;
@@ -193,7 +196,7 @@
             position: absolute;
             right: 0;
             top: 15px;
-            animation: rotate-sm 1s infinite alternate linear;
+            animation: rotate-sm 1.3s infinite alternate linear;
         }
         @include media(425){
             max-width: 170px;   
@@ -480,6 +483,7 @@
         }
         @include media(1024){
             padding: 18px 20px;
+            border: 1px solid #141E2D;
         }
         @include media(768){
             padding: 10px 20px;
@@ -490,6 +494,8 @@
         @include media(575){
             font-size: 16px;
             line-height: 100%;
+            padding: 10px 12px;
+            font-size: 16px;
         }
         @include media(425){
             font-size: 15px;

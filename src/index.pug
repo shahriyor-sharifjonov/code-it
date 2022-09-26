@@ -15,15 +15,15 @@ html(lang="en")
                 section.section.intro  
                     .section__container.container.intro__body 
                         .section__inner.intro__inner
-                            .intro__row
+                            .intro__row 
                                 .intro__left 
                                     h1.intro__title Пожалуй, самый #[span важный вклад] в образование ваших детей —посвятить их в мир IT.
                                     p.intro__describtion Давайте выберем направление обучения! #[br] Сколько лет вашему ребенку?
                                     .intro__buttons 
-                                        button(type="button" data-target="feedback").popup-open.intro__button 5-10 лет
-                                        button(type="button" data-target="feedback").popup-open.intro__button 11-17 лет 
+                                        button(type="button" data-target="less-10").open-popup.intro__button 5-10 лет
+                                        button(type="button" data-target="more-10").open-popup.intro__button 11-17 лет 
                                 .intro__img 
-                                    img(src="@img/intro-img.png", alt="")
+                                    img(src="@img/intro-img.png", alt="" draggable="false")
                             .intro__bottom
                                 h2.intro__subtitle.enable-md Почему навыки программирования нужны вашему ребенку
                                 p.intro__text.enable-md Уже с раннего возраста ребенок будет посвящен в разработку IT-продуктов. 
@@ -32,7 +32,7 @@ html(lang="en")
                                     .intro__wrapper 
                                         h2.intro__subtitle.disable-md Почему навыки программирования нужны вашему ребенку
                                         .intro__wrapper-img 
-                                            img(src="@img/intro-img-2.png", alt="")
+                                            img(src="@img/intro-img-2.png", alt="" draggable="false")
                                     .intro__right 
                                         p.intro__text.disable-md Уже с раннего возраста ребенок будет посвящен в разработку IT-продуктов. 
                                         p.intro__desc.disable-md А еще программирование развивает математическое мышление, память и отлично тренирует логику! #[br] #[br] Это не только полезно, но и еще очень увлекательно!

@@ -132,6 +132,9 @@ a{
         border: 2px solid #000000;
         border-radius: 40px;
         width: 100%;
+        @include media(768){
+            border: 1px solid #000000;
+        }
         @include media(576){
             border-radius: 20px;
         }
@@ -193,6 +196,13 @@ a{
             }
         }
     }
+    &.green{
+        .popup{
+            &__body{
+                background: #BFFDF2;
+            }
+        }
+    }
     &__overlay{
         position: fixed;
         top: 0;
@@ -211,8 +221,13 @@ a{
         width: 100%;
         transform: translateX(100%);
         transition: 800ms cubic-bezier(0.68,-0.55,0.265,1.55);
+        max-height: 90%;
+        overflow: auto;
         @include media(1024){
             border-radius: 30px;
+        }
+        @include media(768){
+            border: 1px solid #000000;
         }
         @include media(576){
             border-radius: 20px;
@@ -317,6 +332,75 @@ a{
         }
         @include media(576){
             padding: 10px 17px;
+        }
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    &__item{
+        background: #fff;
+        border-radius: 40px;
+        transition: 300ms ease-out;
+        width: calc(50% - 12.5px);
+        border: 2px solid #000000;
+        padding: 30px 20px;
+        @include media(768){
+            border-radius: 30px;
+            border: 1px solid #000;
+        }
+        &:hover{
+            box-shadow: -92px 114px 58px rgba(0, 0, 0, 0.01), -52px 64px 49px rgba(0, 0, 0, 0.05), -23px 28px 37px rgba(0, 0, 0, 0.09), -6px 7px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        &-title{
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 100%;
+            margin-bottom: 15px;
+            color: #000000;
+            @include media(768){
+                font-size: 18px;
+                line-height: 100%;
+                margin-bottom: 5px;
+            }
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        &-price{
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 100%;
+            color: #5A0AA7;
+            @include media(768){
+                font-size: 12px;
+            }
+        }
+        &-term{
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 100%;
+            color: #5A0AA7;
+            @include media(768){
+                font-size: 12px;
+            }
+        }
+        &-img{
+            margin-left: auto;
+            width: 80px;
+            height: 80px;
+            @include media(768){
+                width: 40px;
+                height: 40px;
+            }
+            img{
+                height: 100%;
+            }
         }
     }
 }

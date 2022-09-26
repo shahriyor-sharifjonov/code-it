@@ -275,6 +275,10 @@ a {
   background: #EEE6F5;
 }
 
+.popup.green .popup__body {
+  background: #BFFDF2;
+}
+
 .popup__overlay {
   position: fixed;
   top: 0;
@@ -298,6 +302,8 @@ a {
   -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  max-height: 90%;
+  overflow: auto;
 }
 
 .popup__inner {
@@ -351,6 +357,77 @@ a {
 
 .popup__btn {
   height: 60px;
+}
+
+.popup__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+.popup__item {
+  background: #fff;
+  border-radius: 40px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  width: calc(50% - 12.5px);
+  border: 2px solid #000000;
+  padding: 30px 20px;
+}
+
+.popup__item:hover {
+  -webkit-box-shadow: -92px 114px 58px rgba(0, 0, 0, 0.01), -52px 64px 49px rgba(0, 0, 0, 0.05), -23px 28px 37px rgba(0, 0, 0, 0.09), -6px 7px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -92px 114px 58px rgba(0, 0, 0, 0.01), -52px 64px 49px rgba(0, 0, 0, 0.05), -23px 28px 37px rgba(0, 0, 0, 0.09), -6px 7px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popup__item-title {
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 100%;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.popup__item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.popup__item-price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  color: #5A0AA7;
+}
+
+.popup__item-term {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  color: #5A0AA7;
+}
+
+.popup__item-img {
+  margin-left: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.popup__item-img img {
+  height: 100%;
 }
 
 .course {
@@ -1409,8 +1486,8 @@ a {
   -webkit-transform: rotate(8.25deg);
       -ms-transform: rotate(8.25deg);
           transform: rotate(8.25deg);
-  -webkit-animation: rotate 1s infinite alternate linear;
-          animation: rotate 1s infinite alternate linear;
+  -webkit-animation: rotate 2s infinite alternate ease-in;
+          animation: rotate 2s infinite alternate ease-in;
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
@@ -2602,6 +2679,10 @@ a {
     margin-bottom: 5px;
   }
 
+  .intro {
+    margin-bottom: 10px;
+  }
+
   .intro__row {
     padding: 30px 0 30px 60px;
   }
@@ -3123,6 +3204,7 @@ a {
 
   .intro__btn {
     padding: 18px 20px;
+    border: 1px solid #141E2D;
   }
 
   .qa__content {
@@ -3333,9 +3415,17 @@ a {
     padding: 0 10px;
   }
 
+  .section__inner {
+    border: 1px solid #000000;
+  }
+
   .title {
     font-size: 27px;
     line-height: 100%;
+  }
+
+  .popup__body {
+    border: 1px solid #000000;
   }
 
   .popup__inner {
@@ -3368,6 +3458,30 @@ a {
   }
 
   .popup__btn {
+    height: 40px;
+  }
+
+  .popup__item {
+    border-radius: 30px;
+    border: 1px solid #000;
+  }
+
+  .popup__item-title {
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 5px;
+  }
+
+  .popup__item-price {
+    font-size: 12px;
+  }
+
+  .popup__item-term {
+    font-size: 12px;
+  }
+
+  .popup__item-img {
+    width: 40px;
     height: 40px;
   }
 
@@ -4291,8 +4405,8 @@ a {
     position: absolute;
     right: 0;
     top: 15px;
-    -webkit-animation: rotate-sm 1s infinite alternate linear;
-            animation: rotate-sm 1s infinite alternate linear;
+    -webkit-animation: rotate-sm 1.3s infinite alternate linear;
+            animation: rotate-sm 1.3s infinite alternate linear;
   }
 
   .qa__textarea {
@@ -4378,6 +4492,8 @@ a {
   .intro__btn {
     font-size: 16px;
     line-height: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
   }
 
   .direction {
