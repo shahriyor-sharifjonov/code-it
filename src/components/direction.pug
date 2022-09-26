@@ -6,17 +6,17 @@ mixin direction()
                     .direction__body 
                         h2.direction__title Выберете направление курса
                         .direction__list
-                            button(type="button" data-target="first").direction__button.active.disable-md Создание игр на ПК
-                            button(type="button" data-target="second").direction__button.disable-md Программирование и анализ данных
-                            button(type="button" data-target="third").direction__button.disable-md Дизайн
-                            button(type="button" data-target="first1").direction__button.active.enable-md Создание игр на ПК
-                            button(type="button" data-target="second1").direction__button.enable-md Программирование и анализ данных
-                            button(type="button" data-target="third1").direction__button.enable-md Дизайн
-                        .direction__row
+                            button(type="button" data-target="first").direction__button.active Создание игр на ПК
+                            button(type="button" data-target="second").direction__button Программирование и анализ данных
+                            button(type="button" data-target="third").direction__button Дизайн
+                            //- button(type="button" data-target="first1").direction__button.active.enable-md Создание игр на ПК
+                            //- button(type="button" data-target="second1").direction__button.enable-md Программирование и анализ данных
+                            //- button(type="button" data-target="third1").direction__button.enable-md Дизайн
+                        .direction__row.active#first
                             p.direction__text Создание игр на ПК 
-                            .direction__items.active#first
+                            .direction__items
                                 .direction__content 
-                                    .direction__item
+                                    a(href="course.html").direction__item
                                         .direction__item-left 
                                             h2.direction__subtitle Создание игр в Roblox Studio
                                             .direction__info    
@@ -24,7 +24,7 @@ mixin direction()
                                                 p.direction__p от 10 лет
                                         .direction__item-img 
                                             img(src="@img/direction-img-1.svg", alt="")
-                                    .direction__item
+                                    a(href="course.html").direction__item
                                         .direction__item-left 
                                             h2.direction__subtitle Создание игр и мультфильмов в Scratch
                                             .direction__info    
@@ -32,7 +32,7 @@ mixin direction()
                                                 p.direction__p от 5 лет
                                         .direction__item-img 
                                             img(src="@img/direction-img-2.svg", alt="")
-                                    .direction__item
+                                    a(href="course.html").direction__item
                                         .direction__item-left 
                                             h2.direction__subtitle Создание игр #[br] в Unity
                                             .direction__info    
@@ -40,91 +40,11 @@ mixin direction()
                                                 p.direction__p от 14 лет
                                         .direction__item-img 
                                             img(src="@img/direction-img-3.svg", alt="")
-                            p.direction__text Программирование и анализ данных
-                            .direction__items.enable-sm#second
-                                .direction__content 
-                                    .direction__item
-                                        .direction__item-left 
-                                            h2.direction__subtitle Основы программирования на Python
-                                            .direction__info    
-                                                p.direction__p от 600 руб./занятие
-                                                p.direction__p от 12 лет
-                                        .direction__item-img 
-                                            img(src="@img/direction-img-5.svg", alt="")
-                                    .direction__item
-                                        .direction__item-left 
-                                            h2.direction__subtitle Создание сайтов и Web-Design
-                                            .direction__info    
-                                                p.direction__p от 900 руб./занятие
-                                                p.direction__p от 14 лет
-                                        .direction__item-img 
-                                            img(src="@img/direction-img-6.svg", alt="")
-                                    .direction__item
-                                        .direction__item-left 
-                                            h2.direction__subtitle Разработка мобильных игр на Android
-                                            .direction__info    
-                                                p.direction__p от 600 руб./занятие
-                                                p.direction__p от 12 лет
-                                        .direction__item-img 
-                                            img(src="@img/direction-img-7.svg", alt="")
-                            p.direction__text от 12 лет
-                            .direction__items.last.enable-sm#third
-                                .direction__content 
-                                    .direction__item
-                                        .direction__item-left 
-                                            h2.direction__subtitle 3D-моделирование
-                                            .direction__info    
-                                                p.direction__p от 600 руб./занятие
-                                                p.direction__p от 12 лет
-                                        .direction__item-img 
-                                            img(src="@img/direction-img-8.svg", alt="")
-                            .slider.direction__slider#third1 
+                            .slider.direction__slider 
                                 .swiper.direction__swiper 
                                     .swiper-wrapper.direction__swiper-wrapper 
                                         .swiper-slide.direction__swiper-slide 
-                                            .direction__item
-                                                .direction__item-left 
-                                                    h2.direction__subtitle 3D-моделирование
-                                                    .direction__info    
-                                                        p.direction__p от 600 руб./занятие
-                                                        p.direction__p от 12 лет
-                                                .direction__item-img 
-                                                    img(src="@img/direction-img-8.svg", alt="")
-                            .slider.direction__slider#second1 
-                                .swiper.direction__swiper 
-                                    .swiper-wrapper.direction__swiper-wrapper 
-                                        .swiper-slide.direction__swiper-slide 
-                                            .direction__item
-                                                .direction__item-left 
-                                                    h2.direction__subtitle Основы программирования на Python
-                                                    .direction__info    
-                                                        p.direction__p от 600 руб./занятие
-                                                        p.direction__p от 12 лет
-                                                .direction__item-img 
-                                                    img(src="@img/direction-img-5.svg", alt="")
-                                        .swiper-slide.direction__swiper-slide 
-                                            .direction__item
-                                                .direction__item-left 
-                                                    h2.direction__subtitle Создание сайтов и Web-Design
-                                                    .direction__info    
-                                                        p.direction__p от 900 руб./занятие
-                                                        p.direction__p от 14 лет
-                                                .direction__item-img 
-                                                    img(src="@img/direction-img-6.svg", alt="")
-                                        .swiper-slide.direction__swiper-slide 
-                                            .direction__item
-                                                .direction__item-left 
-                                                    h2.direction__subtitle Разработка мобильных игр на Android
-                                                    .direction__info    
-                                                        p.direction__p от 600 руб./занятие
-                                                        p.direction__p от 12 лет
-                                                .direction__item-img 
-                                                    img(src="@img/direction-img-7.svg", alt="")
-                            .slider.direction__slider#first1.active 
-                                .swiper.direction__swiper 
-                                    .swiper-wrapper.direction__swiper-wrapper 
-                                        .swiper-slide.direction__swiper-slide 
-                                            .direction__item
+                                            a(href="course.html").direction__item
                                                 .direction__item-left 
                                                     h2.direction__subtitle Создание игр и мультфильмов в Scratch
                                                     .direction__info    
@@ -133,7 +53,7 @@ mixin direction()
                                                 .direction__item-img 
                                                     img(src="@img/direction-img-2.svg", alt="")
                                         .swiper-slide.direction__swiper-slide 
-                                            .direction__item
+                                            a(href="course.html").direction__item
                                                 .direction__item-left 
                                                     h2.direction__subtitle Создание игр в Roblox Studio
                                                     .direction__info    
@@ -142,7 +62,7 @@ mixin direction()
                                                 .direction__item-img 
                                                     img(src="@img/direction-img-1.svg", alt="")
                                         .swiper-slide.direction__swiper-slide 
-                                            .direction__item
+                                            a(href="course.html").direction__item
                                                 .direction__item-left 
                                                     h2.direction__subtitle Создание игр #[br] в Unity
                                                     .direction__info    
@@ -154,6 +74,96 @@ mixin direction()
                                 p.direction__desc Какой ребенок не любит компьютерные игры? Мы предлагаем сделать этот процесс полезнее -- создавать и играть в свои игры. Увлекательно и точно понравится каждому!
                                 .direction__img.gif
                                     img(src="@img/roblox-course.gif", alt="" draggable="false")
+                        .direction__row#second
+                            p.direction__text Программирование и анализ данных
+                            .direction__items.enable-sm
+                                .direction__content 
+                                    a(href="course.html").direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Основы программирования на Python
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-5.svg", alt="")
+                                    a(href="course.html").direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Создание сайтов и Web-Design
+                                            .direction__info    
+                                                p.direction__p от 900 руб./занятие
+                                                p.direction__p от 14 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-6.svg", alt="")
+                                    a(href="course.html").direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Разработка мобильных игр на Android
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-7.svg", alt="")
+                            .slider.direction__slider 
+                                .swiper.direction__swiper 
+                                    .swiper-wrapper.direction__swiper-wrapper 
+                                        .swiper-slide.direction__swiper-slide 
+                                            a(href="course.html").direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Основы программирования на Python
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-5.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            a(href="course.html").direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Создание сайтов и Web-Design
+                                                    .direction__info    
+                                                        p.direction__p от 900 руб./занятие
+                                                        p.direction__p от 14 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-6.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            a(href="course.html").direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Разработка мобильных игр на Android
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-7.svg", alt="")
+                            .direction__right 
+                                p.direction__desc Даже самый простой написанный код — мощная умственная нагрузка! Как и в математике, в основе программирования лежат логические операции. Однако программирование более практично:  выполнив условие, можно написать программу, которая решит реальную человеческую проблему.
+                                .direction__img.gif
+                                    img(src="@img/python-course.gif", alt="" draggable="false")
+                        .direction__row#third 
+                            p.direction__text от 12 лет 
+                            .direction__items.last.enable-sm
+                                .direction__content 
+                                    a(href="course.html").direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle 3D-моделирование
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-8.svg", alt="")
+                            .slider.direction__slider 
+                                .swiper.direction__swiper 
+                                    .swiper-wrapper.direction__swiper-wrapper 
+                                        .swiper-slide.direction__swiper-slide 
+                                            a(href="course.html").direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle 3D-моделирование
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-8.svg", alt="")
+                            .direction__right 
+                                p.direction__desc Наши курсы по дизайну для детей — отличная возможность развить визуальное, пространственное мышление и раскрыть творческое начало. При этом совсем не обязательно быть художником!
+                                .direction__img.gif
+                                    img(src="@img/3dmodelling-course.gif", alt="" draggable="false")
                 .practice 
                     .practice__body 
                         h2.practice__title Как будет удобнее заниматься?

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220926224902">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220926234335">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная - Code It</title>
   </head>
@@ -98,18 +98,14 @@
                         <div class="direction__body"> 
                           <h2 class="direction__title">Выберете направление курса</h2>
                           <div class="direction__list">
-                            <button class="direction__button active disable-md" type="button" data-target="first">Создание игр на ПК</button>
-                            <button class="direction__button disable-md" type="button" data-target="second">Программирование и анализ данных</button>
-                            <button class="direction__button disable-md" type="button" data-target="third">Дизайн</button>
-                            <button class="direction__button active enable-md" type="button" data-target="first1">Создание игр на ПК</button>
-                            <button class="direction__button enable-md" type="button" data-target="second1">Программирование и анализ данных</button>
-                            <button class="direction__button enable-md" type="button" data-target="third1">Дизайн</button>
+                            <button class="direction__button active" type="button" data-target="first">Создание игр на ПК</button>
+                            <button class="direction__button" type="button" data-target="second">Программирование и анализ данных</button>
+                            <button class="direction__button" type="button" data-target="third">Дизайн</button>
                           </div>
-                          <div class="direction__row">
+                          <div class="direction__row active" id="first">
                             <p class="direction__text">Создание игр на ПК </p>
-                            <div class="direction__items active" id="first">
-                              <div class="direction__content"> 
-                                <div class="direction__item">
+                            <div class="direction__items">
+                              <div class="direction__content"> <a class="direction__item" href="course.html">
                                   <div class="direction__item-left"> 
                                     <h2 class="direction__subtitle">Создание игр в Roblox Studio</h2>
                                     <div class="direction__info">   
@@ -117,9 +113,7 @@
                                       <p class="direction__p">от 10 лет</p>
                                     </div>
                                   </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div>
-                                </div>
-                                <div class="direction__item">
+                                  <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div></a><a class="direction__item" href="course.html">
                                   <div class="direction__item-left"> 
                                     <h2 class="direction__subtitle">Создание игр и мультфильмов в Scratch</h2>
                                     <div class="direction__info">   
@@ -127,9 +121,7 @@
                                       <p class="direction__p">от 5 лет</p>
                                     </div>
                                   </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div>
-                                </div>
-                                <div class="direction__item">
+                                  <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div></a><a class="direction__item" href="course.html">
                                   <div class="direction__item-left"> 
                                     <h2 class="direction__subtitle">Создание игр <br> в Unity</h2>
                                     <div class="direction__info">   
@@ -137,125 +129,12 @@
                                       <p class="direction__p">от 14 лет</p>
                                     </div>
                                   </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div>
-                                </div>
-                              </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div></a></div>
                             </div>
-                            <p class="direction__text">Программирование и анализ данных</p>
-                            <div class="direction__items enable-sm" id="second">
-                              <div class="direction__content"> 
-                                <div class="direction__item">
-                                  <div class="direction__item-left"> 
-                                    <h2 class="direction__subtitle">Основы программирования на Python</h2>
-                                    <div class="direction__info">   
-                                      <p class="direction__p">от 600 руб./занятие</p>
-                                      <p class="direction__p">от 12 лет</p>
-                                    </div>
-                                  </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div>
-                                </div>
-                                <div class="direction__item">
-                                  <div class="direction__item-left"> 
-                                    <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
-                                    <div class="direction__info">   
-                                      <p class="direction__p">от 900 руб./занятие</p>
-                                      <p class="direction__p">от 14 лет</p>
-                                    </div>
-                                  </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div>
-                                </div>
-                                <div class="direction__item">
-                                  <div class="direction__item-left"> 
-                                    <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
-                                    <div class="direction__info">   
-                                      <p class="direction__p">от 600 руб./занятие</p>
-                                      <p class="direction__p">от 12 лет</p>
-                                    </div>
-                                  </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div>
-                                </div>
-                              </div>
-                            </div>
-                            <p class="direction__text">от 12 лет</p>
-                            <div class="direction__items last enable-sm" id="third">
-                              <div class="direction__content"> 
-                                <div class="direction__item">
-                                  <div class="direction__item-left"> 
-                                    <h2 class="direction__subtitle">3D-моделирование</h2>
-                                    <div class="direction__info">   
-                                      <p class="direction__p">от 600 руб./занятие</p>
-                                      <p class="direction__p">от 12 лет</p>
-                                    </div>
-                                  </div>
-                                  <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="slider direction__slider" id="third1"> 
+                            <div class="slider direction__slider"> 
                               <div class="swiper direction__swiper"> 
                                 <div class="swiper-wrapper direction__swiper-wrapper"> 
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
-                                      <div class="direction__item-left"> 
-                                        <h2 class="direction__subtitle">3D-моделирование</h2>
-                                        <div class="direction__info">   
-                                          <p class="direction__p">от 600 руб./занятие</p>
-                                          <p class="direction__p">от 12 лет</p>
-                                        </div>
-                                      </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="slider direction__slider" id="second1"> 
-                              <div class="swiper direction__swiper"> 
-                                <div class="swiper-wrapper direction__swiper-wrapper"> 
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
-                                      <div class="direction__item-left"> 
-                                        <h2 class="direction__subtitle">Основы программирования на Python</h2>
-                                        <div class="direction__info">   
-                                          <p class="direction__p">от 600 руб./занятие</p>
-                                          <p class="direction__p">от 12 лет</p>
-                                        </div>
-                                      </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
-                                      <div class="direction__item-left"> 
-                                        <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
-                                        <div class="direction__info">   
-                                          <p class="direction__p">от 900 руб./занятие</p>
-                                          <p class="direction__p">от 14 лет</p>
-                                        </div>
-                                      </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
-                                      <div class="direction__item-left"> 
-                                        <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
-                                        <div class="direction__info">   
-                                          <p class="direction__p">от 600 руб./занятие</p>
-                                          <p class="direction__p">от 12 лет</p>
-                                        </div>
-                                      </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="slider direction__slider active" id="first1"> 
-                              <div class="swiper direction__swiper"> 
-                                <div class="swiper-wrapper direction__swiper-wrapper"> 
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
                                       <div class="direction__item-left"> 
                                         <h2 class="direction__subtitle">Создание игр и мультфильмов в Scratch</h2>
                                         <div class="direction__info">   
@@ -263,11 +142,8 @@
                                           <p class="direction__p">от 5 лет</p>
                                         </div>
                                       </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
+                                      <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div></a></div>
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
                                       <div class="direction__item-left"> 
                                         <h2 class="direction__subtitle">Создание игр в Roblox Studio</h2>
                                         <div class="direction__info">   
@@ -275,11 +151,8 @@
                                           <p class="direction__p">от 10 лет</p>
                                         </div>
                                       </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide direction__swiper-slide"> 
-                                    <div class="direction__item">
+                                      <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div></a></div>
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
                                       <div class="direction__item-left"> 
                                         <h2 class="direction__subtitle">Создание игр <br> в Unity</h2>
                                         <div class="direction__info">   
@@ -287,15 +160,113 @@
                                           <p class="direction__p">от 14 лет</p>
                                         </div>
                                       </div>
-                                      <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div>
-                                    </div>
-                                  </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div></a></div>
                                 </div>
                               </div>
                             </div>
                             <div class="direction__right"> 
                               <p class="direction__desc">Какой ребенок не любит компьютерные игры? Мы предлагаем сделать этот процесс полезнее -- создавать и играть в свои игры. Увлекательно и точно понравится каждому!</p>
                               <div class="direction__img gif"><picture><source srcset="img/roblox-course.webp" type="image/webp"><img src="img/roblox-course.gif" alt="" draggable="false"></picture></div>
+                            </div>
+                          </div>
+                          <div class="direction__row" id="second">
+                            <p class="direction__text">Программирование и анализ данных</p>
+                            <div class="direction__items enable-sm">
+                              <div class="direction__content"> <a class="direction__item" href="course.html">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Основы программирования на Python</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div></a><a class="direction__item" href="course.html">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 900 руб./занятие</p>
+                                      <p class="direction__p">от 14 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div></a><a class="direction__item" href="course.html">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div></a></div>
+                            </div>
+                            <div class="slider direction__slider"> 
+                              <div class="swiper direction__swiper"> 
+                                <div class="swiper-wrapper direction__swiper-wrapper"> 
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Основы программирования на Python</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div></a></div>
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 900 руб./занятие</p>
+                                          <p class="direction__p">от 14 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div></a></div>
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="direction__right"> 
+                              <p class="direction__desc">Даже самый простой написанный код — мощная умственная нагрузка! Как и в математике, в основе программирования лежат логические операции. Однако программирование более практично:  выполнив условие, можно написать программу, которая решит реальную человеческую проблему.</p>
+                              <div class="direction__img gif"><picture><source srcset="img/python-course.webp" type="image/webp"><img src="img/python-course.gif" alt="" draggable="false"></picture></div>
+                            </div>
+                          </div>
+                          <div class="direction__row" id="third"> 
+                            <p class="direction__text">от 12 лет </p>
+                            <div class="direction__items last enable-sm">
+                              <div class="direction__content"> <a class="direction__item" href="course.html">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">3D-моделирование</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div></a></div>
+                            </div>
+                            <div class="slider direction__slider"> 
+                              <div class="swiper direction__swiper"> 
+                                <div class="swiper-wrapper direction__swiper-wrapper"> 
+                                  <div class="swiper-slide direction__swiper-slide"> <a class="direction__item" href="course.html">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">3D-моделирование</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="direction__right"> 
+                              <p class="direction__desc">Наши курсы по дизайну для детей — отличная возможность развить визуальное, пространственное мышление и раскрыть творческое начало. При этом совсем не обязательно быть художником!</p>
+                              <div class="direction__img gif"><picture><source srcset="img/3dmodelling-course.webp" type="image/webp"><img src="img/3dmodelling-course.gif" alt="" draggable="false"></picture></div>
                             </div>
                           </div>
                         </div>
@@ -575,6 +546,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220926224902"> </script>
+    <script src="js/app.min.js?_v=20220926234335"> </script>
   </body>
 </html>

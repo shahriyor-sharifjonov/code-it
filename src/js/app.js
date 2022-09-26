@@ -120,8 +120,8 @@ if(document.querySelectorAll('.form')){
 }
 
 const directionBtn = document.querySelectorAll('.direction__button');
-const directionItems = document.querySelectorAll('.direction__items');
-const directionSlider = document.querySelectorAll('.direction__slider');
+// const directionItems = document.querySelectorAll('.direction__items');
+const directionSlider = document.querySelectorAll('.direction__row');
 
 directionBtn.forEach(btn=>{
   btn.addEventListener('click', (e=>{
@@ -130,9 +130,6 @@ directionBtn.forEach(btn=>{
     })
     directionSlider.forEach(dSlider=>{
       dSlider.classList.remove('active')
-    })
-    directionItems.forEach(dItems=>{
-      dItems.classList.remove('active')
     })
     e.target.classList.toggle('active')
     const target = e.target.getAttribute("data-target")

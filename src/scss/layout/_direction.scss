@@ -117,10 +117,13 @@
         }
     }
     &__row{
-        display: flex;
         justify-content: space-between;
         align-items: flex-start;
         column-gap: 50px;
+        display: none;
+        &.active{
+            display: flex;
+        }
         @include media(1375){
             column-gap: 15px;
         }
@@ -148,7 +151,7 @@
         }
     }
     &__items{
-        display: none;
+        display: flex;
         @include media(1024){
             flex: 1 1 auto;
         }
@@ -160,9 +163,6 @@
             overflow-x: auto;
             position: relative;
             width: 100%;
-        }
-        &.active{
-            display: flex;
         }
         &.last{
             margin-bottom: 0;
@@ -361,17 +361,17 @@
         @include media(768){
             display: none;
         }
-        &::before{
-            content: '';
-            position: absolute;
-            right: -43px;
-            height: 100%;
-            background: linear-gradient(269.03deg, #EEE6F5 23.07%, rgba(255, 255, 255, 0) 98.9%);
-            width: 230px;
-            @include media(1024){
-                right: -1px;
-            }
-        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     right: -43px;
+        //     height: 100%;
+        //     background: linear-gradient(269.03deg, #EEE6F5 23.07%, rgba(255, 255, 255, 0) 98.9%);
+        //     width: 230px;
+        //     @include media(1024){
+        //         right: -1px;
+        //     }
+        // }
         img{
             @include media(1375){
                 width: 100%;
@@ -379,25 +379,17 @@
         }
     }
     &__slider{
-        display: none;
         width: calc(100% + 20px);
         margin-left: -10px;
         position: relative;
         overflow: hidden;
         padding: 10px;
+        display: none;
         @include media(768){
-            display: none;
+            display: block;
         }
         @include media(575){
             display: none;
-        }
-        &.active{
-            @include media(768){
-                display: block !important;
-            }
-            @include media(575){
-                display: none !important;
-            }
         }
         &::before{
             content: '';
