@@ -551,7 +551,8 @@
     &__left{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
+        flex: 1 1 auto;
         @include media(768){
             width: 100%;
         }
@@ -627,7 +628,8 @@
         row-gap: 25px;
         padding-left: 25px;
         position: relative;
-        margin-bottom: 62px;
+        margin-bottom: 62px;    
+        flex: 1 1 auto;
         @include media(1375){
             padding-left: 18px;
             row-gap: 18px;
