@@ -4176,6 +4176,7 @@ a {
     max-width: 265px;
     width: 100%;
     padding: 20px 25px;
+    border-radius: 20px;
   }
 
   .practice__subtitle {
