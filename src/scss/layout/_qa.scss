@@ -23,7 +23,7 @@
     &__img{
         max-width: 40%;
         display: flex;
-        align-items: center;
+        align-items: center; 
         justify-content: flex-end;
         @include media(374){
             display: none;

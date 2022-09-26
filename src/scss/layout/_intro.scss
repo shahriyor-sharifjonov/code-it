@@ -193,6 +193,7 @@
             position: absolute;
             right: 0;
             top: 15px;
+            animation: rotate-sm 1s infinite alternate linear;
         }
         @include media(425){
             max-width: 170px;   
@@ -508,8 +509,13 @@
     }
     100%{
         transform: rotate(-8.25deg);
-        @include media(576){
-            transform: rotate(0deg);
-        }
+    }
+}
+@keyframes rotate-sm {
+    0%{
+        transform: rotate(8.25deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
