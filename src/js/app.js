@@ -31,6 +31,11 @@ var mySwiper = new Swiper('.learn__swiper', {
   }
 })
 
+var mySwiper = new Swiper('.carousel__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+})
+
 if(document.querySelectorAll('.gif')){
   const gifs = document.querySelectorAll('.gif');
   gifs.forEach(gif => {
