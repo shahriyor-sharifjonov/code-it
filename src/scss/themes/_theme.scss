@@ -24,6 +24,7 @@ body{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     .main{
         flex: 1 1 auto;
     }
@@ -145,6 +146,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
     transition: 300ms ease-out;
