@@ -621,6 +621,9 @@
             display: none;
         }
     }
+    &__space{
+        flex: 1 1 auto;
+    }
     &__txts{
         display: flex;
         flex-direction: column;
@@ -629,7 +632,6 @@
         padding-left: 25px;
         position: relative;
         margin-bottom: 62px;    
-        flex: 1 1 auto;
         @include media(1375){
             padding-left: 18px;
             row-gap: 18px;

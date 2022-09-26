@@ -2134,6 +2134,12 @@ a {
   margin-bottom: 62px;
 }
 
+.practice__space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .practice__txts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2149,9 +2155,6 @@ a {
   padding-left: 25px;
   position: relative;
   margin-bottom: 62px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .practice__txts.enable-md {
