@@ -6,36 +6,192 @@ mixin direction()
                     .direction__body 
                         h2.direction__title Выберете направление курса
                         .direction__list
-                            button(type="button").direction__button.active Создание игр на ПК
-                            button(type="button").direction__button Программирование и анализ данных
-                            button(type="button").direction__button Дизайн
-                        .direction__row 
-                            .direction__items 
-                                .direction__item
-                                    .direction__item-left 
-                                        h2.direction__subtitle Создание игр в Roblox Studio
-                                        .direction__info    
-                                            p.direction__p от 600 руб./занятие
-                                            p.direction__p от 10 лет
-                                    .direction__item-img 
-                                        img(src="@img/direction-img-1.svg", alt="")
-                                .direction__item
-                                    .direction__item-left 
-                                        h2.direction__subtitle Создание игр и мультфильмов в Scratch
-                                        .direction__info    
-                                            p.direction__p от 900 руб./занятие
-                                            p.direction__p от 5 лет
-                                    .direction__item-img 
-                                        img(src="@img/direction-img-2.svg", alt="")
-                                .direction__item
-                                    .direction__item-left 
-                                        h2.direction__subtitle Создание игр в Unity
-                                        .direction__info    
-                                            p.direction__p от 600 руб./занятие
-                                            p.direction__p от 14 лет
-                                    .direction__item-img 
-                                        img(src="@img/direction-img-3.svg", alt="")
+                            button(type="button" data-target="first").direction__button.active.disable-md Создание игр на ПК
+                            button(type="button" data-target="second").direction__button.disable-md Программирование и анализ данных
+                            button(type="button" data-target="third").direction__button.disable-md Дизайн
+                            button(type="button" data-target="first1").direction__button.active.enable-md Создание игр на ПК
+                            button(type="button" data-target="second1").direction__button.enable-md Программирование и анализ данных
+                            button(type="button" data-target="third1").direction__button.enable-md Дизайн
+                        .direction__row
+                            p.direction__text Создание игр на ПК 
+                            .direction__items.active#first
+                                .direction__content 
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Создание игр в Roblox Studio
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 10 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-1.svg", alt="")
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Создание игр и мультфильмов в Scratch
+                                            .direction__info    
+                                                p.direction__p от 900 руб./занятие
+                                                p.direction__p от 5 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-2.svg", alt="")
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Создание игр #[br] в Unity
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 14 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-3.svg", alt="")
+                            p.direction__text Программирование и анализ данных
+                            .direction__items.enable-sm#second
+                                .direction__content 
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Основы программирования на Python
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-5.svg", alt="")
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Создание сайтов и Web-Design
+                                            .direction__info    
+                                                p.direction__p от 900 руб./занятие
+                                                p.direction__p от 14 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-6.svg", alt="")
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle Разработка мобильных игр на Android
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-7.svg", alt="")
+                            p.direction__text от 12 лет
+                            .direction__items.last.enable-sm#third
+                                .direction__content 
+                                    .direction__item
+                                        .direction__item-left 
+                                            h2.direction__subtitle 3D-моделирование
+                                            .direction__info    
+                                                p.direction__p от 600 руб./занятие
+                                                p.direction__p от 12 лет
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-8.svg", alt="")
+                            .slider.direction__slider#third1 
+                                .swiper.direction__swiper 
+                                    .swiper-wrapper.direction__swiper-wrapper 
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle 3D-моделирование
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-8.svg", alt="")
+                            .slider.direction__slider#second1 
+                                .swiper.direction__swiper 
+                                    .swiper-wrapper.direction__swiper-wrapper 
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Основы программирования на Python
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-5.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Создание сайтов и Web-Design
+                                                    .direction__info    
+                                                        p.direction__p от 900 руб./занятие
+                                                        p.direction__p от 14 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-6.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Разработка мобильных игр на Android
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 12 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-7.svg", alt="")
+                            .slider.direction__slider#first1.active 
+                                .swiper.direction__swiper 
+                                    .swiper-wrapper.direction__swiper-wrapper 
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Создание игр и мультфильмов в Scratch
+                                                    .direction__info    
+                                                        p.direction__p от 900 руб./занятие
+                                                        p.direction__p от 5 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-2.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Создание игр в Roblox Studio
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 10 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-1.svg", alt="")
+                                        .swiper-slide.direction__swiper-slide 
+                                            .direction__item
+                                                .direction__item-left 
+                                                    h2.direction__subtitle Создание игр #[br] в Unity
+                                                    .direction__info    
+                                                        p.direction__p от 600 руб./занятие
+                                                        p.direction__p от 14 лет
+                                                .direction__item-img 
+                                                    img(src="@img/direction-img-3.svg", alt="")
                             .direction__right 
                                 p.direction__desc Какой ребенок не любит компьютерные игры? Мы предлагаем сделать этот процесс полезнее -- создавать и играть в свои игры. Увлекательно и точно понравится каждому!
                                 .direction__img 
                                     img(src="@img/direction-img-4.png", alt="")
+                .practice 
+                    .practice__body 
+                        h2.practice__title Как будет удобнее заниматься?
+                        .practice__content 
+                            .practice__item
+                                .practice__left
+                                    .practice__top
+                                        p.practice__subtitle Индивидуально с преподавателем
+                                        p.practice__text от 900 руб./занятие
+                                        p.practice__p при оплате 64 занятий
+                                    .practice__txts.disable-md 
+                                        p.practice__txt Онлайн-уроки в Zoom по 1 часу с индивидуальным расписанием 
+                                        p.practice__txt Полное сопровождение ребенка в процессе обучения
+                                        p.practice__txt Полное сопровождение ребенка в процессе обучения
+                                    button(type="button" data-target="feedback").practice__button.open-popup Отправить заявку
+                                .practice__txts.enable-md 
+                                    p.practice__txt Онлайн-уроки в Zoom по 1.5 часа
+                                    p.practice__txt Полное сопровождение ребенка в процессе обучения
+                                    p.practice__txt Ответы на любые вопросы в совместом чате
+                            .practice__item
+                                .practice__left 
+                                    .practice__top
+                                        p.practice__subtitle В группе
+                                        p.practice__text от 600 руб./занятие
+                                        p.practice__p при оплате 64 занятий
+                                    .practice__txts.disable-md 
+                                        p.practice__txt Онлайн-уроки в Zoom по 1.5 часа
+                                        p.practice__txt Полное сопровождение ребенка в процессе обучения
+                                        p.practice__txt Ответы на любые вопросы в совместом чате
+                                    button(type="button" data-target="feedback").practice__button.open-popup Отправить заявку
+                                .practice__txts.enable-md 
+                                    p.practice__txt Онлайн-уроки в Zoom по 1.5 часа
+                                    p.practice__txt Полное сопровождение ребенка в процессе обучения
+                                    p.practice__txt Ответы на любые вопросы в совместом чате
+                .offer 
+                    .offer__body.container 
+                        h2.offer__title С друзьями веселее и выгоднее! 
+                        .offer__content 
+                            .offer__discount 
+                                p.offer__discount-p -5%
+                            p.offer__p за каждого  приведенного друга!

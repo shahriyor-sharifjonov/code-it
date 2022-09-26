@@ -2,9 +2,14 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
+
+var mySwiper = new Swiper('.direction__swiper', {
+  slidesPerView: 2,
+  spaceBetween: 10,
+})
 
 if(document.querySelectorAll('.gif')){
   const gifs = document.querySelectorAll('.gif');
@@ -16,11 +21,13 @@ if(document.querySelectorAll('.gif')){
 
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__menu");
+const body = document.querySelector('body');
 let menuOpened = false;
 const menuToggle = () => {
   menuOpened = !menuOpened;
   headerButton.classList.toggle("open");
   headerMenu.classList.toggle("open");
+  body.classList.toggle("hidden");
 };
 
 headerButton.onclick = menuToggle;
@@ -86,3 +93,24 @@ if(document.querySelectorAll('.form')){
     })
   })
 }
+
+const directionBtn = document.querySelectorAll('.direction__button');
+const directionItems = document.querySelectorAll('.direction__items');
+const directionSlider = document.querySelectorAll('.direction__slider');
+
+directionBtn.forEach(btn=>{
+  btn.addEventListener('click', (e=>{
+    directionBtn.forEach(dBtn=>{
+      dBtn.classList.remove('active')
+    })
+    directionSlider.forEach(dSlider=>{
+      dSlider.classList.remove('active')
+    })
+    directionItems.forEach(dItems=>{
+      dItems.classList.remove('active')
+    })
+    e.target.classList.toggle('active')
+    const target = e.target.getAttribute("data-target")
+    document.querySelector(`#${target}`).classList.toggle('active')
+  }))
+})

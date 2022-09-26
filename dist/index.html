@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220926143505">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220926144741">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Главная - Code It</title>
   </head>
@@ -98,46 +98,323 @@
                         <div class="direction__body"> 
                           <h2 class="direction__title">Выберете направление курса</h2>
                           <div class="direction__list">
-                            <button class="direction__button active" type="button">Создание игр на ПК</button>
-                            <button class="direction__button" type="button">Программирование и анализ данных</button>
-                            <button class="direction__button" type="button">Дизайн</button>
+                            <button class="direction__button active disable-md" type="button" data-target="first">Создание игр на ПК</button>
+                            <button class="direction__button disable-md" type="button" data-target="second">Программирование и анализ данных</button>
+                            <button class="direction__button disable-md" type="button" data-target="third">Дизайн</button>
+                            <button class="direction__button active enable-md" type="button" data-target="first1">Создание игр на ПК</button>
+                            <button class="direction__button enable-md" type="button" data-target="second1">Программирование и анализ данных</button>
+                            <button class="direction__button enable-md" type="button" data-target="third1">Дизайн</button>
                           </div>
-                          <div class="direction__row"> 
-                            <div class="direction__items"> 
-                              <div class="direction__item">
-                                <div class="direction__item-left"> 
-                                  <h2 class="direction__subtitle">Создание игр в Roblox Studio</h2>
-                                  <div class="direction__info">   
-                                    <p class="direction__p">от 600 руб./занятие</p>
-                                    <p class="direction__p">от 10 лет</p>
+                          <div class="direction__row">
+                            <p class="direction__text">Создание игр на ПК </p>
+                            <div class="direction__items active" id="first">
+                              <div class="direction__content"> 
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Создание игр в Roblox Studio</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 10 лет</p>
+                                    </div>
                                   </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div>
                                 </div>
-                                <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div>
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Создание игр и мультфильмов в Scratch</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 900 руб./занятие</p>
+                                      <p class="direction__p">от 5 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div>
+                                </div>
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Создание игр <br> в Unity</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 14 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div>
+                                </div>
                               </div>
-                              <div class="direction__item">
-                                <div class="direction__item-left"> 
-                                  <h2 class="direction__subtitle">Создание игр и мультфильмов в Scratch</h2>
-                                  <div class="direction__info">   
-                                    <p class="direction__p">от 900 руб./занятие</p>
-                                    <p class="direction__p">от 5 лет</p>
+                            </div>
+                            <p class="direction__text">Программирование и анализ данных</p>
+                            <div class="direction__items enable-sm" id="second">
+                              <div class="direction__content"> 
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Основы программирования на Python</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
                                   </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div>
                                 </div>
-                                <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div>
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 900 руб./занятие</p>
+                                      <p class="direction__p">от 14 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div>
+                                </div>
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div>
+                                </div>
                               </div>
-                              <div class="direction__item">
-                                <div class="direction__item-left"> 
-                                  <h2 class="direction__subtitle">Создание игр в Unity</h2>
-                                  <div class="direction__info">   
-                                    <p class="direction__p">от 600 руб./занятие</p>
-                                    <p class="direction__p">от 14 лет</p>
+                            </div>
+                            <p class="direction__text">от 12 лет</p>
+                            <div class="direction__items last enable-sm" id="third">
+                              <div class="direction__content"> 
+                                <div class="direction__item">
+                                  <div class="direction__item-left"> 
+                                    <h2 class="direction__subtitle">3D-моделирование</h2>
+                                    <div class="direction__info">   
+                                      <p class="direction__p">от 600 руб./занятие</p>
+                                      <p class="direction__p">от 12 лет</p>
+                                    </div>
+                                  </div>
+                                  <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slider direction__slider" id="third1"> 
+                              <div class="swiper direction__swiper"> 
+                                <div class="swiper-wrapper direction__swiper-wrapper"> 
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">3D-моделирование</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-8.svg" alt=""></div>
+                                    </div>
                                   </div>
                                 </div>
-                                <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div>
+                              </div>
+                            </div>
+                            <div class="slider direction__slider" id="second1"> 
+                              <div class="swiper direction__swiper"> 
+                                <div class="swiper-wrapper direction__swiper-wrapper"> 
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Основы программирования на Python</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-5.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Создание сайтов и Web-Design</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 900 руб./занятие</p>
+                                          <p class="direction__p">от 14 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-6.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Разработка мобильных игр на Android</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 12 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-7.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="slider direction__slider active" id="first1"> 
+                              <div class="swiper direction__swiper"> 
+                                <div class="swiper-wrapper direction__swiper-wrapper"> 
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Создание игр и мультфильмов в Scratch</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 900 руб./занятие</p>
+                                          <p class="direction__p">от 5 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-2.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Создание игр в Roblox Studio</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 10 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-1.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide direction__swiper-slide"> 
+                                    <div class="direction__item">
+                                      <div class="direction__item-left"> 
+                                        <h2 class="direction__subtitle">Создание игр <br> в Unity</h2>
+                                        <div class="direction__info">   
+                                          <p class="direction__p">от 600 руб./занятие</p>
+                                          <p class="direction__p">от 14 лет</p>
+                                        </div>
+                                      </div>
+                                      <div class="direction__item-img"> <img src="img/direction-img-3.svg" alt=""></div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                             <div class="direction__right"> 
                               <p class="direction__desc">Какой ребенок не любит компьютерные игры? Мы предлагаем сделать этот процесс полезнее -- создавать и играть в свои игры. Увлекательно и точно понравится каждому!</p>
                               <div class="direction__img"> <picture><source srcset="img/direction-img-4.webp" type="image/webp"><img src="img/direction-img-4.png" alt=""></picture></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="practice"> 
+                        <div class="practice__body"> 
+                          <h2 class="practice__title">Как будет удобнее заниматься?</h2>
+                          <div class="practice__content"> 
+                            <div class="practice__item">
+                              <div class="practice__left">
+                                <div class="practice__top">
+                                  <p class="practice__subtitle">Индивидуально с преподавателем</p>
+                                  <p class="practice__text">от 900 руб./занятие</p>
+                                  <p class="practice__p">при оплате 64 занятий</p>
+                                </div>
+                                <div class="practice__txts disable-md"> 
+                                  <p class="practice__txt">Онлайн-уроки в Zoom по 1 часу с индивидуальным расписанием </p>
+                                  <p class="practice__txt">Полное сопровождение ребенка в процессе обучения</p>
+                                  <p class="practice__txt">Полное сопровождение ребенка в процессе обучения</p>
+                                </div>
+                                <button class="practice__button open-popup" type="button" data-target="feedback">Отправить заявку</button>
+                              </div>
+                              <div class="practice__txts enable-md"> 
+                                <p class="practice__txt">Онлайн-уроки в Zoom по 1.5 часа</p>
+                                <p class="practice__txt">Полное сопровождение ребенка в процессе обучения</p>
+                                <p class="practice__txt">Ответы на любые вопросы в совместом чате</p>
+                              </div>
+                            </div>
+                            <div class="practice__item">
+                              <div class="practice__left"> 
+                                <div class="practice__top">
+                                  <p class="practice__subtitle">В группе</p>
+                                  <p class="practice__text">от 600 руб./занятие</p>
+                                  <p class="practice__p">при оплате 64 занятий</p>
+                                </div>
+                                <div class="practice__txts disable-md"> 
+                                  <p class="practice__txt">Онлайн-уроки в Zoom по 1.5 часа</p>
+                                  <p class="practice__txt">Полное сопровождение ребенка в процессе обучения</p>
+                                  <p class="practice__txt">Ответы на любые вопросы в совместом чате</p>
+                                </div>
+                                <button class="practice__button open-popup" type="button" data-target="feedback">Отправить заявку</button>
+                              </div>
+                              <div class="practice__txts enable-md"> 
+                                <p class="practice__txt">Онлайн-уроки в Zoom по 1.5 часа</p>
+                                <p class="practice__txt">Полное сопровождение ребенка в процессе обучения</p>
+                                <p class="practice__txt">Ответы на любые вопросы в совместом чате</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="offer"> 
+                        <div class="offer__body container"> 
+                          <h2 class="offer__title">С друзьями веселее и выгоднее! </h2>
+                          <div class="offer__content"> 
+                            <div class="offer__discount"> 
+                              <p class="offer__discount-p">-5%</p>
+                            </div>
+                            <p class="offer__p">за каждого  приведенного друга!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="section about"> 
+                  <div class="section__container container">
+                    <div class="section__inner about__inner">
+                      <div class="lessons">
+                        <div class="lessons__body"> 
+                          <h2 class="lessons__title">Вот так мы проводим наши уроки</h2>
+                          <div class="lessons__wrapper"> 
+                            <div class="lessons__item"> 
+                              <div class="lessons__img"> <picture><source srcset="img/lessons-img-1.webp" type="image/webp"><img src="img/lessons-img-1.png" alt=""></picture></div>
+                              <div class="lessons__right"> 
+                                <p class="lessons__p">Усаживаемся поудобнее, включаем камеру и приветствуем друг друга. </p>
+                                <div class="lessons__arrow"> <img src="img/lessons-arrow-1.svg" alt="" draggable="false"></div>
+                              </div>
+                            </div>
+                            <div class="lessons__item"> 
+                              <div class="lessons__right"> 
+                                <p class="lessons__p">Обсуждаем план занятия с учетом пожеланий ребенка.</p>
+                                <div class="lessons__arrow"> <picture><source srcset="img/lessons-arrow-2.webp" type="image/webp"><img src="img/lessons-arrow-2.png" alt="" draggable="false"></picture></div>
+                              </div>
+                              <div class="lessons__img"> <picture><source srcset="img/lessons-img-2.webp" type="image/webp"><img src="img/lessons-img-2.png" alt=""></picture></div>
+                            </div>
+                            <div class="lessons__item"> 
+                              <div class="lessons__img"> <picture><source srcset="img/lessons-img-3.webp" type="image/webp"><img src="img/lessons-img-3.png" alt=""></picture></div>
+                              <div class="lessons__right"> 
+                                <p class="lessons__p">Приступаем к практической части и воплощаем свои идеи!</p>
+                                <div class="lessons__arrow"> <picture><source srcset="img/lessons-arrow-3.webp" type="image/webp"><img src="img/lessons-arrow-3.png" alt="" draggable="false"></picture></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="learn">
+                        <div class="learn__body"> 
+                          <h2 class="learn__title">Вот, что научится делать ваш ребенок</h2>
+                          <div class="slider learn__slider"> 
+                            <div class="swiper learn__swiper"> 
+                              <div class="swiper-wrapper learn__swiper-wrapper"> 
+                                <div class="swiper-slide learn__swiper-slide"> 
+                                  <div class="learn__img"> <picture><source srcset="img/learn-img-1.webp" type="image/webp"><img src="img/learn-img-1.png" alt="" draggable="false"></picture></div>
+                                  <p class="learn__p">Полноценные игровые миры в Roblox Studio</p>
+                                </div>
+                                <div class="swiper-slide learn__swiper-slide"> 
+                                  <div class="learn__img"> <picture><source srcset="img/learn-img-2.webp" type="image/webp"><img src="img/learn-img-2.png" alt="" draggable="false"></picture></div>
+                                  <p class="learn__p">Сюжетные игры и мультфильмы для самых маленьких в Scratch</p>
+                                </div>
+                                <div class="swiper-slide learn__swiper-slide"> 
+                                  <div class="learn__img"> <picture><source srcset="img/learn-img-3.webp" type="image/webp"><img src="img/learn-img-3.png" alt="" draggable="false"></picture></div>
+                                  <p class="learn__p">Компьютерные технологии и азы программирования на Python</p>
+                                </div>
+                                <div class="swiper-slide learn__swiper-slide"> 
+                                  <div class="learn__img"> <picture><source srcset="img/learn-img-4.webp" type="image/webp"><img src="img/learn-img-4.png" alt="" draggable="false"></picture></div>
+                                  <p class="learn__p">Моделирование объектов и персонажей в Blender</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -200,6 +477,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220926143505"> </script>
+    <script src="js/app.min.js?_v=20220926144741"> </script>
   </body>
 </html>
