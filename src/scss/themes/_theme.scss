@@ -461,6 +461,7 @@ a{
     }
 }
 .for{
+    margin-bottom: 10px;
     &__inner{
         padding: 50px;
         position: relative;
@@ -569,6 +570,80 @@ a{
         }
         @include media(425){
             font-size: 15px;
+        }
+    }
+}
+.how{
+    margin-bottom: 10px;
+    &__inner{
+        padding: 50px;
+        position: relative;
+        @include media(1376){
+            padding: 50px 43px;
+        }
+        @include media(768){
+            padding: 40px 25px;
+        }
+        @include media(576){
+            padding: 35px 25px;
+        }
+        @include media(425){
+            padding: 30px 25px;
+        }
+        @include media(375){
+            padding: 20px 22px;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 47px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 20px;
+        @include media(1376){
+            font-size: 34px;
+        }
+        @include media(1024){
+            font-size: 30px;
+        }
+        @include media(768){
+            font-size: 27px;
+        }
+        @include media(576){
+            font-size: 20px;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        margin-bottom: 35px;
+        color: #000000;
+        @include media(1376){
+            font-size: 22px;
+        }
+        @include media(768){
+            font-size: 19px;
+        }
+        @include media(576){
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        @include media(425){
+            font-size: 15px;
+        }
+    }
+    &__img{
+        width: 100%;
+        border: 10px solid #EEE6F5;
+        border-radius: 40px;
+        overflow: hidden;
+        line-height: 0;
+        @include media(576){
+            border: 8px solid #EEE6F5;
+        }
+        img{
+            width: 100%;
         }
     }
 }
