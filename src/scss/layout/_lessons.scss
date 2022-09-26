@@ -1,8 +1,4 @@
 .about{
-    margin-bottom: 21px;
-    @include media(1375){
-        margin-bottom: 10px;
-    }
     &__inner{
         background: #BFFDF2;
     }

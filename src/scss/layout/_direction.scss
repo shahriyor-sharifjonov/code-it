@@ -395,6 +395,9 @@
             @include media(768){
                 display: block !important;
             }
+            @include media(575){
+                display: none !important;
+            }
         }
         &::before{
             content: '';
