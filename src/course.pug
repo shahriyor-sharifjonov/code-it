@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
+        title Страница Курса - Code It
+    body 
+        .wrapper 
+            include components/header 
+            +header('home') 
+            main.main 
+                include components/course 
+                +course
+                include components/for 
+                +for
+                include components/how 
+                +how
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 
