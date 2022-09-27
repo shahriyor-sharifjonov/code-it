@@ -3,7 +3,7 @@
     @include media(1375){
         padding: 40px 0;
     }
-    @include media(768){
+    @include media(767){
         padding: 25px 0;
     }
     &__body{
@@ -48,7 +48,7 @@
                 font-size: 12px;
                 line-height: 100%;
             }
-            @include media(768){
+            @include media(767){
                 font-size: 8px;
             }
         }
@@ -65,8 +65,6 @@
         @include media(1375){
             height: 40px;
             font-size: 13.5px;
-        }
-        @include media(768){
             border: 1px solid #141E2D;
         }
     }
@@ -81,11 +79,9 @@
         padding: 20px 24px;
         @include media(1375){
             font-size: 13.5px;
-        }
-        @include media(768){
             border: 1px solid #141E2D;
         }
-        @include media(576){
+        @include media(575){
             border-radius: 20px;
         }
     }
@@ -108,10 +104,10 @@
             font-size: 24px;
             margin-bottom: 15px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 20px;
         }
-        @include media(576){
+        @include media(575){
             font-size: 18px;
         }
     }
@@ -127,7 +123,7 @@
         @include media(1024){
             font-size: 16px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 16px;
         }
     }

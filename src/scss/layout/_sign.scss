@@ -6,10 +6,10 @@
     @include media(1024){
         padding: 75px 0;
     }
-    @include media(768){
+    @include media(767){
         padding: 70px 0;
     }
-    @include media(425){
+    @include media(424){
         padding: 45px 0;
     }
     &__body{
@@ -23,13 +23,13 @@
         @include media(1024){
             column-gap: 6px;
         }
-        @include media(768){
+        @include media(767){
             column-gap: 28px;
         }
         @include media(575){
             column-gap: 10px;
         }
-        @include media(425){
+        @include media(424){
             align-items: flex-end;
         }
     }
@@ -63,7 +63,7 @@
             font-size: 46px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             font-size: 36px;
             line-height: 100%;
         }
@@ -83,7 +83,7 @@
             line-height: 100%;
             margin-bottom: 20px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 18px;
         }
         @include media(575){
@@ -229,6 +229,10 @@
         border: 2px solid #141E2D;
         border-radius: 40px;
         margin-bottom: 10px;
+        transition: 300ms ease-out;
+        &:hover{
+            background: #BFFDF2;
+        }
         @include media(1375){
             margin-bottom: 7px;
             border: 1px solid #141E2D;
@@ -236,7 +240,7 @@
             font-size: 22px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             height: 38px;
             font-size: 18px;
             line-height: 100%;
@@ -257,7 +261,7 @@
             font-size: 15px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             font-size: 13px;
         }
     }
@@ -269,7 +273,7 @@
         @include media(1024){
             max-width: 231px;
         }
-        @include media(768){
+        @include media(767){
             max-width: 170px;
         }
         @include media(575){

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220926235244">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220928020407">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Страница Курса - Code It</title>
   </head>
@@ -112,7 +112,7 @@
                     </div>
                   </div>
                 </section>
-                <div class="sign"> 
+                <div class="sign" id="form"> 
                   <div class="sign__body container"> 
                     <div class="sign__left"> 
                       <h2 class="sign__title">Запишитесь на бесплатный пробный урок!</h2>
@@ -192,54 +192,56 @@
                   </div>
                   <div class="popup green" id="more-10">
                     <div class="popup__overlay close-popup"></div>
-                    <div class="popup__body"> 
-                      <div class="popup__inner"> 
-                        <div class="popup__header">
-                          <p class="popup__title">Курсы для вас:</p>
+                    <div class="popup__body big">
+                      <div class="popup__inner" data-simplebar>
+                        <div class="popup__track">
+                          <div class="popup__header">
+                            <p class="popup__title">Курсы для вас:</p>
+                          </div>
+                          <div class="popup__items"> <a class="popup__item" href="course.html">
+                              <p class="popup__item-title">Создание игр и мультфильмов в Scratch</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 900 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 5 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/scratch.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
+                              <p class="popup__item-title">Создание игр в Roblox Studio</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 600 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 10 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/roblox.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html"> 
+                              <p class="popup__item-title">Создание сайтов и Web-Design</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 600 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 14 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/json.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
+                              <p class="popup__item-title">Создание игр в Unity</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 600 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 14 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/unity.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
+                              <p class="popup__item-title">3D-моделирование</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 600 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 12 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/blender.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
+                              <p class="popup__item-title">Разработка мобильных игр на Android</p>
+                              <div class="popup__item-row"> 
+                                <p class="popup__item-price">от 600 руб./<br>занятие</p>
+                                <p class="popup__item-term">от 12 лет</p>
+                              </div>
+                              <div class="popup__item-img"> <img src="img/android.svg" alt="" draggable="false"></div></a></div>
                         </div>
-                        <div class="popup__items"> <a class="popup__item" href="course.html">
-                            <p class="popup__item-title">Создание игр и мультфильмов в Scratch</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 900 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 5 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/scratch.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
-                            <p class="popup__item-title">Создание игр в Roblox Studio</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 600 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 10 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/roblox.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
-                            <p class="popup__item-title">Создание сайтов и Web-Design</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 600 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 14 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/json.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
-                            <p class="popup__item-title">Создание игр в Unity</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 600 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 14 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/unity.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
-                            <p class="popup__item-title">3D-моделирование</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 600 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 12 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/blender.svg" alt="" draggable="false"></div></a><a class="popup__item" href="course.html">
-                            <p class="popup__item-title">Разработка мобильных игр на Android</p>
-                            <div class="popup__item-row"> 
-                              <p class="popup__item-price">от 600 руб./<br>занятие</p>
-                              <p class="popup__item-term">от 12 лет</p>
-                            </div>
-                            <div class="popup__item-img"> <img src="img/android.svg" alt="" draggable="false"></div></a></div>
                       </div>
                     </div>
                   </div>
             <footer class="footer"> 
               <div class="footer__top">
-                <div class="footer__top-body container"> <a class="footer__logo" href="index.html" title="Главная страница"><img src="img/logo.svg" alt="Code it online school" draggable="false"></a>
+                <div class="footer__top-body container"> <a class="footer__logo" href="index.html" title="Главная страница"><img src="img/logo.svg" alt="Code it online school" draggable="false"></a><a class="footer__logo sm" href="index.html" title="Главная страница"><img src="img/logo-sm.svg" alt="Code it online school" draggable="false"></a>
                   <ul class="footer__list"> 
                     <li class="footer__li"> <a class="footer__link" href="#!">О школе </a></li>
                     <li class="footer__li"> <a class="footer__link" href="#!">Кто мы </a></li>
@@ -265,6 +267,7 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20220926235244"> </script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js?_v=20220928020407"> </script>
+    <script src="js/app.min.js?_v=20220928020407"> </script>
   </body>
 </html>

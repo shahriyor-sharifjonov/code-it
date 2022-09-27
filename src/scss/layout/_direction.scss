@@ -16,13 +16,13 @@
     @include media(1024){
         padding: 40px 20px 147px 20px;
     }
-    @include media(768){
+    @include media(767){
         padding: 35px 22px 40px 22px;
     }
     @include media(575){
         padding: 30px 20px 25px 22px;
     }
-    @include media(425){
+    @include media(424){
         padding: 20px 22px 25px;
     }
     &__title{
@@ -37,7 +37,7 @@
             line-height: 100%;
             margin-bottom: 20px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 27px;
             line-height: 100%;
         }
@@ -57,7 +57,7 @@
             margin-bottom: 25px;
             align-items: center;
         }
-        @include media(768){
+        @include media(767){
             flex-wrap: wrap;
             row-gap: 5px;
             column-gap: 10px;
@@ -81,12 +81,13 @@
             font-size: 24px;
             line-height: 100%;
             padding: 20px;
+            border: 1px solid transparent;
         }
         @include media(1024){
             font-size: 22px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             font-size: 18px;
             line-height: 100%;
             padding: 10px 20px;
@@ -94,26 +95,19 @@
         }
         &.enable-md{
             display: none;
-            @include media(768){
+            @include media(767){
                 display: flex;
             }
         }
         &.disable-md{
             display: flex;
-            @include media(768){
+            @include media(767){
                 display: none;
             }
         }
-        &.active, &:hover{
+        &.active{
             color: #FFFFFF;
             background: #5A0AA7;
-        }
-        &.active{
-            &:hover{
-                background: #EEE6F5;
-                border: 2px solid #141E2D;
-                color: #141E2D;
-            }
         }
     }
     &__row{
@@ -130,13 +124,14 @@
         @include media(1024){
             column-gap: 20px;
         }
-        @include media(768){
+        @include media(767){
             flex-direction: column;
             align-items: flex-start;
             row-gap: 11px;
         }
         @include media(575){
             row-gap: 0;
+            display: flex;
         }
     }
     &__text{
@@ -155,7 +150,7 @@
         @include media(1024){
             flex: 1 1 auto;
         }
-        @include media(768){
+        @include media(767){
             display: none !important;
         }
         @include media(575){
@@ -197,10 +192,12 @@
         border: 2px solid #000000;
         border-radius: 40px;
         padding: 20px 20px 20px 25px;
-        transition: 300ms ease;
+        transition: 600ms ease;
+        transform-origin: right top;
         @include media(1375){
             column-gap: 30px;
             border-radius: 30px;
+            border: 1px solid #000000;
         }
         @include media(1024){
             padding: 15px 15px 15px 20px;
@@ -208,7 +205,7 @@
             position: relative;
             min-height: 100px;
         }
-        @include media(768){
+        @include media(767){
             position: static;
             height: 100%;
             flex-direction: column;
@@ -216,7 +213,6 @@
             width: 100%;
             row-gap: 40px;
             border-radius: 32px;
-            border: 1px solid #000000;
         }
         @include media(575){
             max-width: 176px;
@@ -227,12 +223,13 @@
             row-gap: 20px;
             border-radius: 20px;
         }
-        @include media(425){
+        @include media(424){
             border-radius: 30px;
         }
         &:hover{
+            transform: scale(1.001);
             box-shadow: -92px 114px 58px rgba(0, 0, 0, 0.01), -52px 64px 49px rgba(0, 0, 0, 0.05), -23px 28px 37px rgba(0, 0, 0, 0.09), -6px 7px 20px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-            @include media(768){
+            @include media(767){
                 box-shadow: 2px 2px 2px rgb(0 0 0 / 1%), 24px -6px 33px rgb(0 0 0 / 5%), -2px 4px 5px rgb(0 0 0 / 9%), -6px 7px 7px rgb(0 0 0 / 10%), 0 0 0 rgb(0 0 0 / 10%);
             }
         }
@@ -248,7 +245,7 @@
                 bottom: 15px;
                 right: 15px;
             }
-            @include media(768){
+            @include media(767){
                 position: static;
                 max-width: 80px;
                 min-width: 80px;
@@ -277,7 +274,7 @@
         @include media(1024){
             max-width: 198px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 20px;
             line-height: 100%;
             max-width: 100%;
@@ -340,7 +337,7 @@
             max-width: 382px;
             min-width: 100%;
         }
-        @include media(768){
+        @include media(767){
             max-width: 100%;
             margin-bottom: 0;
         }
@@ -358,7 +355,7 @@
             max-width: 397px;
             min-width: 397px;
         }
-        @include media(768){
+        @include media(767){
             display: none;
         }
         // &::before{
@@ -385,7 +382,7 @@
         overflow: hidden;
         padding: 10px;
         display: none;
-        @include media(768){
+        @include media(767){
             display: block;
         }
         @include media(575){
@@ -422,13 +419,13 @@
     @include media(1024){
         padding: 0 20px 15px;
     }
-    @include media(768){
+    @include media(767){
         padding: 0 22px 20px 22px;
     }
     @include media(575){
         padding: 0 28px 20px;
     }
-    @include media(425){
+    @include media(424){
         padding: 0 9px 20px;
     }
     &__body{
@@ -436,22 +433,25 @@
         &::before{
             content: '';
             position: absolute;
-            background: url(../img/practice-img.png) center / cover  no-repeat;
+            background: url(../img/sittingon.png) center / cover  no-repeat;
             width: 315px;
             height: 570px;
             right: -81px;
             top: -200px;
+            transform: rotate(1deg);
             @include media(1375){
-                right: -60px;
-                top: -230px;
+                right: -13px;
+                top: -182px;
+                width: 216px;
+                height: 464.28px;
             }
             @include media(1024){
                 width: 155px;
                 height: 341px;
-                right: -15px;
-                top: -125px;
+                right: -22px;
+                top: -130px;
             }
-            @include media(768){
+            @include media(767){
                 display: none;
             }
         }
@@ -472,7 +472,7 @@
             font-size: 30px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             font-size: 27px;
             line-height: 100%;
             margin-bottom: 23px;
@@ -494,7 +494,7 @@
         @include media(1024){
             column-gap: 15px;
         }
-        @include media(768){
+        @include media(767){
             flex-direction: column;
             align-items: stretch;
             row-gap: 10px;
@@ -513,11 +513,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        width: calc(50% - 17px);
+        width: 50%;
         @include media(1375){
             padding: 45px 35px;
+            border: 1px solid #000000;
         }
-        @include media(768){
+        @include media(767){
             width: 100%;
             align-items: stretch;
             height: 100%;
@@ -545,6 +546,9 @@
             .practice__button{
                 background: #01FAD0;
                 color: #141E2D;
+                &:hover{
+                    background: #BFFDF2;
+                }
             }
         }
     }
@@ -553,7 +557,7 @@
         flex-direction: column;
         justify-content: flex-start;
         flex: 1 1 auto;
-        @include media(768){
+        @include media(767){
             width: 100%;
         }
     }
@@ -573,7 +577,7 @@
             line-height: 100%;
             margin-bottom: 12px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 20px;
             line-height: 100%;
             margin-bottom: 10px;
@@ -595,7 +599,7 @@
             line-height: 100%;
             margin-bottom: 3px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 20px;
             line-height: 100%;
             margin-bottom: 15px;
@@ -617,7 +621,7 @@
             line-height: 32px;
             margin-bottom: 35px;
         }
-        @include media(768){
+        @include media(767){
             display: none;
         }
     }
@@ -637,7 +641,7 @@
             row-gap: 18px;
             margin-bottom: 35px;
         }
-        @include media(768){
+        @include media(767){
             margin-bottom: 0;
             justify-content: center;
         }
@@ -647,7 +651,7 @@
         }
         &.enable-md{
             display: none;
-            @include media(768){
+            @include media(767){
                 display: flex;
             }
             @include media(575){
@@ -656,7 +660,7 @@
         }
         &.disable-md{
             display: flex;
-            @include media(768){
+            @include media(767){
                 display: none;
             }
             @include media(575){
@@ -685,7 +689,7 @@
             font-size: 22px;
             line-height: 100%;
         }
-        @include media(768){
+        @include media(767){
             font-size: 18px;
             line-height: 100%;
         }
@@ -708,14 +712,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @include media(1375){
-            max-width: 100%;
-            font-size: 22px;
-            line-height: 100%;
-            height: 58px;
-            border: 1px solid #141E2D;
+        transition: 300ms ease-out;
+        &:hover{
+            background: #EEE6F5;
+            color: #141E2D;
         }
-        @include media(768){
+        @include media(1375){
+            max-width: 100%; 
+            font-size: 22px; 
+            line-height: 100%; 
+            height: 58px; 
+            border: 1px solid #141E2D; 
+        }
+        @include media(767){ 
             height: 38px;
             width: 176px;
             font-weight: 400;
@@ -737,7 +746,7 @@
     @include media(1024){
         padding: 0 20px 40px;
     }
-    @include media(768){
+    @include media(767){
         padding: 0 23px 35px;
     }
     @include media(575){
@@ -759,7 +768,7 @@
             column-gap: 77px;
             justify-content: space-between;
         }
-        @include media(768){
+        @include media(767){
             padding: 20px 22px;
             column-gap: 5px;
         }
@@ -790,7 +799,7 @@
             line-height: 100%;
             max-width: 185px;
         }
-        @include media(768){
+        @include media(767){
             font-size: 22px;
             line-height: 100%;
             max-width: 187px;
@@ -828,7 +837,7 @@
             height: 96px;
             box-shadow: -10.3246px 2.94989px 13.2745px rgba(0, 0, 0, 0.25);
         }
-        @include media(768){
+        @include media(767){
             min-width: 70px;
             width: 70px;
             height: 67px;
@@ -849,7 +858,7 @@
                 font-size: 44px;
                 line-height: 100%;
             }
-            @include media(768){
+            @include media(767){
                 font-size: 30px;
                 line-height: 100%;
             }
@@ -870,7 +879,7 @@
             margin-left: 0;
             margin-top: 0;
         }
-        @include media(768){
+        @include media(767){
             font-size: 18px;
             line-height: 100%;
             max-width: 188px;

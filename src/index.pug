@@ -17,7 +17,7 @@ html(lang="en")
                         .section__inner.intro__inner
                             .intro__row 
                                 .intro__left 
-                                    h1.intro__title Пожалуй, самый #[span важный вклад] в образование ваших детей —посвятить их в мир IT.
+                                    h1.intro__title Пожалуй, самый #[br]#[span важный вклад]#[br]в образование#[br]ваших детей —#[br]посвятить их#[br]в мир IT.
                                     p.intro__describtion Давайте выберем направление обучения! #[br] Сколько лет вашему ребенку?
                                     .intro__buttons 
                                         button(type="button" data-target="less-10").open-popup.intro__button 5-10 лет
@@ -32,7 +32,7 @@ html(lang="en")
                                     .intro__wrapper 
                                         h2.intro__subtitle.disable-md Почему навыки программирования нужны вашему ребенку
                                         .intro__wrapper-img 
-                                            img(src="@img/intro-img-2.png", alt="" draggable="false")
+                                            img(src="@img/super.svg", alt="" draggable="false")
                                     .intro__right 
                                         p.intro__text.disable-md Уже с раннего возраста ребенок будет посвящен в разработку IT-продуктов. 
                                         p.intro__desc.disable-md А еще программирование развивает математическое мышление, память и отлично тренирует логику! #[br] #[br] Это не только полезно, но и еще очень увлекательно!
@@ -55,4 +55,5 @@ html(lang="en")
                 +sign
             include components/footer 
             +footer
+        script(src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js") 
         script(src="js/app.min.js") 

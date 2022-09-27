@@ -17,21 +17,21 @@ var mySwiper = new Swiper('.learn__swiper', {
   breakpoints:{
     1375:{
       slidesPerView: 2,
-      spaceBetween: 43,
+      spaceBetween: 43, 
     },
     768:{
       slidesPerView: 2,
     },
     576:{
-      slidesPerView: 'auto',
-    },
+      slidesPerView: 'auto', 
+    }, 
     426:{
       slidesPerView: 1,
     }
   }
 })
 
-var mySwiper = new Swiper('.carousel__swiper', {
+var mySwiper = new Swiper('.carousel__swiper', { 
   slidesPerView: 'auto',
   spaceBetween: 10,
 })

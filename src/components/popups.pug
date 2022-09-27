@@ -40,50 +40,51 @@ mixin popups()
                             img(src="@img/roblox.svg", alt="" draggable="false")
     .popup.green#more-10
         .popup__overlay.close-popup
-        .popup__body 
-            .popup__inner 
-                .popup__header
-                    p.popup__title Курсы для вас:
-                .popup__items 
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание игр и мультфильмов в Scratch
-                        .popup__item-row 
-                            p.popup__item-price от 900 руб./<br>занятие
-                            p.popup__item-term от 5 лет
-                        .popup__item-img 
-                            img(src="@img/scratch.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание игр в Roblox Studio
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 10 лет
-                        .popup__item-img 
-                            img(src="@img/roblox.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание сайтов и Web-Design
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 14 лет
-                        .popup__item-img 
-                            img(src="@img/json.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание игр в Unity
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 14 лет
-                        .popup__item-img 
-                            img(src="@img/unity.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title 3D-моделирование
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 12 лет
-                        .popup__item-img 
-                            img(src="@img/blender.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title Разработка мобильных игр на Android
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 12 лет
-                        .popup__item-img 
-                            img(src="@img/android.svg", alt="" draggable="false")
+        .popup__body.big
+            .popup__inner(data-simplebar)
+                .popup__track
+                    .popup__header
+                        p.popup__title Курсы для вас:
+                    .popup__items 
+                        a(href="course.html").popup__item
+                            p.popup__item-title Создание игр и мультфильмов в Scratch
+                            .popup__item-row 
+                                p.popup__item-price от 900 руб./<br>занятие
+                                p.popup__item-term от 5 лет
+                            .popup__item-img 
+                                img(src="@img/scratch.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item
+                            p.popup__item-title Создание игр в Roblox Studio
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 10 лет
+                            .popup__item-img 
+                                img(src="@img/roblox.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item 
+                            p.popup__item-title Создание сайтов и Web-Design
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 14 лет
+                            .popup__item-img 
+                                img(src="@img/json.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item
+                            p.popup__item-title Создание игр в Unity
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 14 лет
+                            .popup__item-img 
+                                img(src="@img/unity.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item
+                            p.popup__item-title 3D-моделирование
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 12 лет
+                            .popup__item-img 
+                                img(src="@img/blender.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item
+                            p.popup__item-title Разработка мобильных игр на Android
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 12 лет
+                            .popup__item-img 
+                                img(src="@img/android.svg", alt="" draggable="false")
