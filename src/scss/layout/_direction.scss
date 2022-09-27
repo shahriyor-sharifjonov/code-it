@@ -734,6 +734,12 @@
         @include media(575){
             margin-left: auto;
             margin-right: auto;
+            font-size: 16px;
+            line-height: 100%;
+        }
+        @include media(424){
+            font-size: 15px;
+            line-height: 18px;
         }
     }
 }

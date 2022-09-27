@@ -123,6 +123,15 @@ button {
   margin-right: auto;
 }
 
+.container-fixed {
+  max-width: 1337px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container-lg {
   max-width: 1086px;
   width: 100%;
@@ -3104,6 +3113,10 @@ a {
     max-width: 984px;
   }
 
+  .container-lg {
+    max-width: 825px;
+  }
+
   .btn {
     border: 1px solid #141E2D;
   }
@@ -3739,6 +3752,10 @@ a {
     max-width: 748px;
   }
 
+  .container-lg {
+    max-width: 711px;
+  }
+
   .title {
     font-size: 30px;
     line-height: 100%;
@@ -4110,6 +4127,10 @@ a {
 @media (max-width: 767px) {
   .container {
     max-width: 556px;
+  }
+
+  .container-lg {
+    max-width: 532px;
   }
 
   .section__container {
@@ -4935,6 +4956,10 @@ a {
     max-width: 404px;
   }
 
+  .container-lg {
+    max-width: 408px;
+  }
+
   .section__inner {
     border-radius: 20px;
   }
@@ -5387,6 +5412,8 @@ a {
   .practice__button {
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
+    line-height: 100%;
   }
 
   .offer {
@@ -5518,6 +5545,10 @@ a {
 }
 
 @media (max-width: 424px) {
+  .container-lg {
+    max-width: 365px;
+  }
+
   .popup__title {
     margin-bottom: 10px;
   }
@@ -5632,6 +5663,11 @@ a {
 
   .practice {
     padding: 0 9px 20px;
+  }
+
+  .practice__button {
+    font-size: 15px;
+    line-height: 18px;
   }
 
   .contacts {
