@@ -2255,8 +2255,38 @@ a {
   margin-bottom: 15px;
 }
 
+.direction__swiper {
+  position: relative;
+  overflow: hidden;
+  max-width: 623px;
+}
+
+.direction__swiper::before {
+  content: "";
+  position: absolute;
+  right: -43px;
+  height: 100%;
+  background: -o-linear-gradient(180.97deg, #EEE6F5 23.07%, rgba(255, 255, 255, 0) 98.9%);
+  background: linear-gradient(269.03deg, #EEE6F5 23.07%, rgba(255, 255, 255, 0) 98.9%);
+  width: 230px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.direction__swiper .direction__img {
+  max-width: 511px;
+}
+
 .direction__img {
   position: relative;
+  max-width: 623px;
+}
+
+.direction__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .direction__slider {
@@ -3468,6 +3498,15 @@ a {
     margin-bottom: 10px;
   }
 
+  .direction__swiper {
+    max-width: 455px;
+    width: 100%;
+  }
+
+  .direction__swiper .direction__img {
+    max-width: 455px;
+  }
+
   .direction__img {
     max-width: 455px;
     width: 100%;
@@ -3986,6 +4025,15 @@ a {
     line-height: 100%;
     max-width: 382px;
     min-width: 100%;
+  }
+
+  .direction__swiper {
+    max-width: 397px;
+    min-width: 397px;
+  }
+
+  .direction__swiper .direction__img {
+    max-width: 380px;
   }
 
   .direction__img {
@@ -4695,6 +4743,10 @@ a {
   .direction__desc {
     max-width: 100%;
     margin-bottom: 0;
+  }
+
+  .direction__swiper {
+    display: none;
   }
 
   .direction__img {

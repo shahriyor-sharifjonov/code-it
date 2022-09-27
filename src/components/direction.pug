@@ -9,37 +9,34 @@ mixin direction()
                             button(type="button" data-target="first").direction__button.active Создание игр на ПК
                             button(type="button" data-target="second").direction__button Программирование и анализ данных
                             button(type="button" data-target="third").direction__button Дизайн
-                            //- button(type="button" data-target="first1").direction__button.active.enable-md Создание игр на ПК
-                            //- button(type="button" data-target="second1").direction__button.enable-md Программирование и анализ данных
-                            //- button(type="button" data-target="third1").direction__button.enable-md Дизайн
                         .direction__row.active#first
                             p.direction__text Создание игр на ПК 
                             .direction__items
                                 .direction__content 
-                                    a(href="course.html").direction__item
+                                    a(href="course.html").direction__item 
                                         .direction__item-left 
-                                            h2.direction__subtitle Создание игр в Roblox Studio
+                                            h2.direction__subtitle Создание игр в Roblox Studio 
                                             .direction__info    
-                                                p.direction__p от 600 руб./занятие
-                                                p.direction__p от 10 лет
+                                                p.direction__p от 600 руб./занятие 
+                                                p.direction__p от 10 лет 
                                         .direction__item-img 
-                                            img(src="@img/direction-img-1.svg", alt="")
-                                    a(href="course.html").direction__item
+                                            img(src="@img/direction-img-1.svg", alt="") 
+                                    a(href="course.html").direction__item 
+                                        .direction__item-left  
+                                            h2.direction__subtitle Создание игр и мультфильмов в Scratch 
+                                            .direction__info    
+                                                p.direction__p от 900 руб./занятие 
+                                                p.direction__p от 5 лет 
+                                        .direction__item-img 
+                                            img(src="@img/direction-img-2.svg", alt="") 
+                                    a(href="course.html").direction__item 
                                         .direction__item-left 
-                                            h2.direction__subtitle Создание игр и мультфильмов в Scratch
+                                            h2.direction__subtitle Создание игр #[br] в Unity 
                                             .direction__info    
-                                                p.direction__p от 900 руб./занятие
-                                                p.direction__p от 5 лет
+                                                p.direction__p от 600 руб./занятие 
+                                                p.direction__p от 14 лет 
                                         .direction__item-img 
-                                            img(src="@img/direction-img-2.svg", alt="")
-                                    a(href="course.html").direction__item
-                                        .direction__item-left 
-                                            h2.direction__subtitle Создание игр #[br] в Unity
-                                            .direction__info    
-                                                p.direction__p от 600 руб./занятие
-                                                p.direction__p от 14 лет
-                                        .direction__item-img 
-                                            img(src="@img/direction-img-3.svg", alt="")
+                                            img(src="@img/direction-img-3.svg", alt="") 
                             .slider.direction__slider 
                                 .swiper.direction__swiper 
                                     .swiper-wrapper.direction__swiper-wrapper 
@@ -72,8 +69,13 @@ mixin direction()
                                                     img(src="@img/direction-img-3.svg", alt="")
                             .direction__right 
                                 p.direction__desc Какой ребенок не любит компьютерные игры? Мы предлагаем сделать этот процесс полезнее -- создавать и играть в свои игры. Увлекательно и точно понравится каждому!
-                                .direction__img.gif
-                                    img(src="@img/roblox-course.gif", alt="" draggable="false")
+                                .direction__swiper
+                                    .swiper.direction__swiper-container  
+                                        .swiper-wrapper.direction__wrapper
+                                            .direction__img.swiper-slide.gif
+                                                img(src="@img/roblox-course.gif", alt="" draggable="false")
+                                            .direction__img.swiper-slide.gif
+                                                img(src="@img/3dmodelling-course.gif", alt="" draggable="false")
                         .direction__row#second
                             p.direction__text Программирование и анализ данных
                             .direction__items.enable-sm
