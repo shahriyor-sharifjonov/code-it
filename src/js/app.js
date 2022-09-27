@@ -41,12 +41,47 @@ var mySwiper = new Swiper('.direction__swiper-container', {
   spaceBetween: 24,
 })
 
-if(document.querySelectorAll('.gif')){
+if(document.querySelector('.learn__img')){
+  const imgs = document.querySelectorAll('.learn__img');
+  imgs.forEach(el => {
+    el.addEventListener('click', () => {
+      const wrapper = document.querySelector('.wrapper');
+      const img = el.querySelector('img')
+      const src = img.getAttribute('src')
+      const popup = document.createElement('div')
+      popup.classList.add('popup')
+      popup.classList.add('active')
+      popup.innerHTML = `
+        <div class="popup__overlay close-popup"></div>
+        <div class="popup__img"> 
+          <img src="${src}" alt="" draggable="false">
+        </div>
+      `
+      wrapper.append(popup)
+      const popups = document.querySelectorAll('.popup');
+      
+      popups.forEach(popup => {
+        const overlay = popup.querySelector('.popup__overlay');
+        overlay.addEventListener('click', () => {
+          popups.forEach(el => {
+            el.classList.remove('active')
+          })
+        })
+      })
+    })
+  })
+}
+
+const gif = () => {
   const gifs = document.querySelectorAll('.gif');
   gifs.forEach(gif => {
     const source = gif.querySelector('source')
     source.remove()
   })
+}
+
+if(document.querySelectorAll('.gif')){
+  gif()
 }
 
 const headerButton = document.querySelector(".header__button");

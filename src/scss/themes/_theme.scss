@@ -219,6 +219,13 @@ a{
     transition: 300ms ease-out;
     padding: 15px;
     z-index: 500;
+    &__img{
+        max-width: 95%;
+        width: 1000px;
+        img{
+            width: 100%;
+        }
+    }
     &.active{
         opacity: 1;
         visibility: visible;

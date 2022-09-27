@@ -274,6 +274,15 @@ a {
   z-index: 500;
 }
 
+.popup__img {
+  max-width: 95%;
+  width: 1000px;
+}
+
+.popup__img img {
+  width: 100%;
+}
+
 .popup.active {
   opacity: 1;
   visibility: visible;
@@ -2830,6 +2839,7 @@ a {
   width: 242px;
   right: 0;
   z-index: 1;
+  pointer-events: none;
   background: -o-linear-gradient(180.97deg, #BFFDF2 23.07%, rgba(255, 255, 255, 0) 98.9%);
   background: linear-gradient(269.03deg, #BFFDF2 23.07%, rgba(255, 255, 255, 0) 98.9%);
 }
