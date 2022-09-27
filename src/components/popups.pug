@@ -3,41 +3,44 @@ mixin popups()
         .popup__overlay.close-popup
         .popup__body 
             .popup__inner 
-                p.popup__title Спасибо!
-                p.popup__p В скором времени мы свяжемся с вами.
+                .popup__track
+                    p.popup__title Спасибо!
+                    p.popup__p В скором времени мы свяжемся с вами.
     .popup.purple#feedback
         .popup__overlay.close-popup
         .popup__body 
             .popup__inner 
-                .popup__header
-                    p.popup__title Мы скоро вам перезвоним!
-                    p.popup__p Поделитесь с нами контактами, чтобы мы смогли связаться с вами и подобрать подходящий курс и дату пробного урока.
-                form(action="#").form.popup__form
-                    input(type="text" placeholder="Ваше имя" required).popup__input
-                    input(type="text" placeholder="+7 (___) ___-__-__" required).popup__input
-                    button(type='submit').btn.popup__btn Попробовать бесплатно
-                    p.popup__form-p Оставляя заявку, вы принимаете оферту, условия договора на оказание услуг и политики обработки пресональных данных.
+                .popup__track
+                    .popup__header
+                        p.popup__title Мы скоро вам перезвоним!
+                        p.popup__p Поделитесь с нами контактами, чтобы мы смогли связаться с вами и подобрать подходящий курс и дату пробного урока.
+                    form(action="#").form.popup__form
+                        input(type="text" placeholder="Ваше имя" required).popup__input
+                        input(type="text" placeholder="+7 (___) ___-__-__" required).popup__input
+                        button(type='submit').btn.popup__btn Попробовать бесплатно
+                        p.popup__form-p Оставляя заявку, вы принимаете оферту, условия договора на оказание услуг и политики обработки пресональных данных.
     .popup.purple#less-10
         .popup__overlay.close-popup
         .popup__body 
             .popup__inner 
-                .popup__header
-                    p.popup__title Курсы для вас:
-                .popup__items 
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание игр и мультфильмов в Scratch
-                        .popup__item-row 
-                            p.popup__item-price от 900 руб./<br>занятие
-                            p.popup__item-term от 5 лет
-                        .popup__item-img 
-                            img(src="@img/scratch.svg", alt="" draggable="false")
-                    a(href="course.html").popup__item
-                        p.popup__item-title Создание игр в Roblox Studio
-                        .popup__item-row 
-                            p.popup__item-price от 600 руб./<br>занятие
-                            p.popup__item-term от 10 лет
-                        .popup__item-img 
-                            img(src="@img/roblox.svg", alt="" draggable="false")
+                .popup__track
+                    .popup__header
+                        p.popup__title Курсы для вас:
+                    .popup__items 
+                        a(href="course.html").popup__item
+                            p.popup__item-title Создание игр и мультфильмов в Scratch
+                            .popup__item-row 
+                                p.popup__item-price от 900 руб./<br>занятие
+                                p.popup__item-term от 5 лет
+                            .popup__item-img 
+                                img(src="@img/scratch.svg", alt="" draggable="false")
+                        a(href="course.html").popup__item
+                            p.popup__item-title Создание игр в Roblox Studio
+                            .popup__item-row 
+                                p.popup__item-price от 600 руб./<br>занятие
+                                p.popup__item-term от 10 лет
+                            .popup__item-img 
+                                img(src="@img/roblox.svg", alt="" draggable="false")
     .popup.green#more-10
         .popup__overlay.close-popup
         .popup__body.big

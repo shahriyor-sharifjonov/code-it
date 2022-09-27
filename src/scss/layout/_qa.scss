@@ -10,6 +10,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media(575){
+            position: relative;
+        }
     }
     &__content{
         display: flex;
@@ -25,8 +28,11 @@
         display: flex;
         align-items: center; 
         justify-content: flex-end;
-        @include media(374){
-            display: none;
+        @include media(575){
+            position: absolute;
+            width: 80px;
+            top: 0;
+            right: 15px;
         }
         img{
             max-width: 100%;
@@ -43,10 +49,10 @@
             @include media(1375){
                 font-size: 15px;
                 line-height: 100%;
+                max-width: 428px;
             }
             @include media(1024){
                 font-size: 12px;
-                line-height: 100%;
             }
             @include media(767){
                 font-size: 8px;
@@ -109,6 +115,7 @@
         }
         @include media(575){
             font-size: 18px;
+            max-width: 223px;
         }
     }
     &__p{
@@ -125,6 +132,9 @@
         }
         @include media(767){
             font-size: 16px;
+        }
+        @include media(575){
+            max-width: 223px;
         }
     }
 }

@@ -77,6 +77,10 @@
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 html,
 body {
   height: 100%;
@@ -3364,6 +3368,7 @@ a {
   .qa__form-p {
     font-size: 15px;
     line-height: 100%;
+    max-width: 428px;
   }
 
   .qa__input {
@@ -3739,6 +3744,7 @@ a {
   .sign__span {
     font-size: 15px;
     line-height: 100%;
+    max-width: 428px;
   }
 
   .sign__img {
@@ -3915,7 +3921,6 @@ a {
 
   .qa__form-p {
     font-size: 12px;
-    line-height: 100%;
   }
 
   .qa__btn {
@@ -4117,6 +4122,10 @@ a {
   .sign__title {
     font-size: 46px;
     line-height: 100%;
+  }
+
+  .sign__span {
+    font-size: 12px;
   }
 
   .sign__img {
@@ -4910,7 +4919,7 @@ a {
   }
 
   .sign__span {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .sign__img {
@@ -5242,12 +5251,28 @@ a {
     font-size: 16px;
   }
 
+  .qa__body {
+    position: relative;
+  }
+
+  .qa__img {
+    position: absolute;
+    width: 80px;
+    top: 0;
+    right: 15px;
+  }
+
   .qa__textarea {
     border-radius: 20px;
   }
 
   .qa__title {
     font-size: 18px;
+    max-width: 223px;
+  }
+
+  .qa__p {
+    max-width: 223px;
   }
 
   .direction {
@@ -5801,10 +5826,6 @@ a {
   }
 
   .intro__img {
-    display: none;
-  }
-
-  .qa__img {
     display: none;
   }
 

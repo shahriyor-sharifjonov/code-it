@@ -260,9 +260,13 @@
         @include media(1375){
             font-size: 15px;
             line-height: 100%;
+            max-width: 428px;
+        }
+        @include media(1024){
+            font-size: 12px;
         }
         @include media(767){
-            font-size: 13px;
+            font-size: 8px;
         }
     }
     &__img{
