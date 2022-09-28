@@ -99,6 +99,15 @@
             align-items: center;
             justify-content: center;
         }
+        @include media(575){
+            height: 36px;
+            font-size: 16px;
+            line-height: 100%;
+        }
+        @include media(424){
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
     &__title{
         font-weight: 600;

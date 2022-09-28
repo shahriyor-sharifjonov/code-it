@@ -251,6 +251,10 @@
             font-size: 16px;
             line-height: 100%;
         }
+        @include media(424){
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
     &__span{
         font-weight: 400;
@@ -282,9 +286,19 @@
         }
         @include media(575){
             max-width: 123px;
+            display: none;
         }
         @include media(374){
             display: none;
+        }
+        &.sm{
+            display: none;
+            @include media(575){
+                display: block;
+            }
+            @include media(374){
+                display: none;
+            }
         }
         img{
             width: 100%;

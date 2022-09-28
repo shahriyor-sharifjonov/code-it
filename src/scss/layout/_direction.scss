@@ -62,10 +62,11 @@
             row-gap: 5px;
             column-gap: 10px;
             margin-bottom: 6px;
-        }
-        @include media(575){
             display: none;
         }
+        // @include media(575){
+        //     display: none;
+        // }
     }
     &__button{
         font-weight: 600;
@@ -127,9 +128,6 @@
         @include media(767){
             flex-direction: column;
             align-items: flex-start;
-            row-gap: 11px;
-        }
-        @include media(575){
             row-gap: 0;
             display: flex;
         }
@@ -141,7 +139,7 @@
         color: #141E2D;
         margin-bottom: 10px;
         display: none;
-        @include media(575){
+        @include media(768){
             display: block;
         }
     }
@@ -151,9 +149,6 @@
             flex: 1 1 auto;
         }
         @include media(767){
-            display: none !important;
-        }
-        @include media(575){
             display: flex !important;
             overflow-x: auto;
             position: relative;
@@ -172,7 +167,7 @@
         @include media(1375){
             row-gap: 12px;
         }
-        @include media(575){
+        @include media(767){
             display: flex;
             row-gap: 10px;
             column-gap: 10px;
@@ -180,6 +175,11 @@
             align-items: stretch;
             margin-bottom: 20px;
             width: max-content;
+        }
+    }
+    &__right{
+        @include media(1024){
+            max-width: 350px;
         }
     }
     &__item{
@@ -204,25 +204,41 @@
             column-gap: 15px;
             position: relative;
             min-height: 100px;
+            min-width: 306px;
         }
+        // @include media(767){
+        //     position: static;
+        //     height: 100%;
+        //     flex-direction: column;
+        //     align-items: flex-start;
+        //     width: 100%;
+        //     row-gap: 40px;
+        //     border-radius: 32px;
+        // }
         @include media(767){
+            max-width: 225px;
+            min-width: 225px;
             position: static;
-            height: 100%;
+            height: auto;
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
-            row-gap: 40px;
-            border-radius: 32px;
+            row-gap: 20px;
+            border-radius: 20px;
         }
         @include media(575){
             max-width: 176px;
             min-width: 176px;
-            width: 100%;
-            height: auto;
-            padding: 20px 15px 15px 15px;
-            row-gap: 20px;
-            border-radius: 20px;
         }
+        // @include media(575){
+        //     max-width: 176px;
+        //     min-width: 176px;
+        //     width: 100%;
+        //     height: auto;
+        //     padding: 20px 15px 15px 15px;
+        //     row-gap: 20px;
+        //     border-radius: 20px;
+        // }
         @include media(424){
             border-radius: 30px;
         }
@@ -340,10 +356,10 @@
         @include media(767){
             max-width: 100%;
             margin-bottom: 0;
-        }
-        @include media(575){
             display: none;
         }
+        // @include media(575){
+        // }
     }
     &__swiper{
         position: relative;
@@ -364,8 +380,8 @@
             width: 100%;
         }
         @include media(1024){
-            max-width: 397px;
-            min-width: 397px;
+            max-width: 350px;
+            min-width: 350px;
         }
         @include media(767){
             display: none;
@@ -376,7 +392,7 @@
                 max-width: 455px;
             }
             @include media(1024){
-                max-width: 380px;
+                max-width: 350px;
             }
         }
     }
@@ -388,8 +404,8 @@
             width: 100%;
         }
         @include media(1024){
-            max-width: 397px;
-            min-width: 397px;
+            max-width: 350px;
+            min-width: 350px;
         }
         @include media(767){
             display: none;
@@ -786,7 +802,7 @@
     @include media(575){
         padding: 0 28px 30px;
     }
-    @include media(375){
+    @include media(374){
         padding: 0 8px 20px;
     }
     &__body{
@@ -809,7 +825,7 @@
         @include media(575){
             padding: 15px;
         }
-        @include media(375){
+        @include media(395){
             flex-direction: column;
             align-items: center;
             row-gap: 12px;
@@ -842,7 +858,7 @@
             font-size: 18px;
             line-height: 100%;
         }
-        @include media(375){
+        @include media(374){
             font-size: 20px;
             line-height: 100%;
             max-width: 100%;
@@ -923,7 +939,7 @@
             font-size: 16px;
             line-height: 100%;
         }
-        @include media(375){
+        @include media(374){
             max-width: 150px;
         }
     }
