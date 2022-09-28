@@ -993,5 +993,9 @@ a{
         align-items: center;
         justify-content: center;
         width: 100%;
+        @include media(575){
+            font-size: 15px;
+            line-height: 100%;
+        }
     }
 }

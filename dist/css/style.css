@@ -5231,6 +5231,11 @@ a {
     font-size: 16px;
   }
 
+  .carousel__btn {
+    font-size: 15px;
+    line-height: 100%;
+  }
+
   .header__nav-body {
     height: 66px;
     padding: 0 25px 0 20px !important;
