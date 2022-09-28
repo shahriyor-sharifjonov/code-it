@@ -2220,6 +2220,7 @@ a {
 
 .direction__item-img {
   min-width: 54px;
+  width: 54px;
 }
 
 .direction__item-img img {
@@ -4813,8 +4814,8 @@ a {
 
   .direction__item-img {
     position: static;
-    max-width: 80px;
-    min-width: 80px;
+    max-width: 83px;
+    min-width: 83px;
     margin-left: auto;
   }
 

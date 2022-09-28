@@ -251,6 +251,7 @@
         }
         &-img{
             min-width: 54px;
+            width: 54px;
             @include media(1375){
                 max-width: 54px;
                 width: 100%;
@@ -263,8 +264,8 @@
             }
             @include media(767){
                 position: static;
-                max-width: 80px;
-                min-width: 80px;
+                max-width: 83px;
+                min-width: 83px;
                 margin-left: auto;
             }
             @include media(575){
