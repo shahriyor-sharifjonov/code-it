@@ -221,6 +221,7 @@ a{
     z-index: 500;
     &__img{
         max-width: 95%;
+        z-index: 1;
         width: 1000px;
         img{
             width: 100%;
